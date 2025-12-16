@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menopausa Sem Tabu</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --roxo:#4B0082;
-      --rosa:#D47FA6;
+      --roxo:#5a2d82;
+      --roxo-escuro:#3b1c59;
+      --rosa:#d88ab5;
+      --cinza:#f4f4f6;
       --texto:#333333;
-      --cinza:#f6f6f6;
     }
 
     *{margin:0;padding:0;box-sizing:border-box}
@@ -21,8 +22,8 @@
     body{
       font-family:'Montserrat',sans-serif;
       color:var(--texto);
-      line-height:1.6;
       background:#fff;
+      line-height:1.6;
     }
 
     section{padding:80px 20px}
@@ -30,22 +31,23 @@
 
     h1,h2,h3{
       font-family:'Playfair Display',serif;
-      color:var(--roxo);
-      margin-bottom:20px;
+      color:var(--roxo-escuro);
+      margin-bottom:24px;
+      line-height:1.25;
     }
 
     h1{font-size:42px}
     h2{font-size:34px}
     h3{font-size:24px}
 
-    p{margin-bottom:20px;font-size:18px}
+    p{font-size:18px;margin-bottom:20px}
 
     .btn{
       display:inline-block;
-      padding:18px 32px;
+      padding:18px 34px;
+      border-radius:6px;
       font-weight:700;
       text-decoration:none;
-      border-radius:6px;
       transition:.3s;
     }
 
@@ -54,12 +56,12 @@
       color:#fff;
     }
 
-    .btn-primary:hover{
-      background:var(--rosa);
-    }
+    .btn-primary:hover{background:var(--rosa)}
+
+    .center{text-align:center}
+    .cinza{background:var(--cinza)}
 
     /* HERO */
-    .hero{text-align:center}
     .hero img{max-width:420px;width:100%;margin:40px auto}
 
     /* VIDEO */
@@ -68,23 +70,19 @@
       padding-bottom:56.25%;
       height:0;
       overflow:hidden;
-      border-radius:12px;
+      border-radius:14px;
+      box-shadow:0 20px 40px rgba(0,0,0,.15);
     }
     .video-container iframe{
-      position:absolute;
-      top:0;left:0;
-      width:100%;height:100%;
+      position:absolute;top:0;left:0;width:100%;height:100%;
     }
 
     /* LISTAS */
-    ul,ol{max-width:800px;margin:0 auto}
-    li{margin-bottom:16px;font-size:18px}
-
-    /* SEÇÕES ALTERNADAS */
-    .cinza{background:var(--cinza)}
+    ul,ol{max-width:820px;margin:0 auto}
+    li{font-size:18px;margin-bottom:16px}
 
     /* PASSOS */
-    .passos ol li strong{color:var(--roxo)}
+    .passos strong{color:var(--roxo)}
 
     /* DEPOIMENTOS */
     .depoimentos-grid{
@@ -92,34 +90,27 @@
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:30px;
     }
-    .depoimento-card{
+    .depoimento{
       background:#fff;
       padding:30px;
-      border-radius:12px;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(0,0,0,.1);
     }
-    .depoimento-card img{
-      width:100%;
-      border-radius:8px;
-      margin-bottom:15px;
-    }
+    .depoimento img{width:100%;border-radius:10px;margin-bottom:16px}
 
     /* BONUS */
     .bonus{
       background:#fff;
       padding:30px;
-      border-radius:12px;
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(0,0,0,.1);
       margin-bottom:30px;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
     }
 
     /* PREÇO */
-    .preco{text-align:center}
-    .preco strong{font-size:28px;color:var(--roxo)}
+    .preco strong{font-size:30px;color:var(--roxo)}
 
-    /* GARANTIA */
-    .garantia{text-align:center}
-
+    /* RESPONSIVO */
     @media(max-width:768px){
       h1{font-size:32px}
       h2{font-size:28px}
@@ -129,12 +120,12 @@
 <body>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero center">
     <div class="container">
-      <h1>Menopausa sem tabu: A fase que pode destruir ou libertar sua vida está acontecendo agora</h1>
-      <p>90% das mulheres passam por isso sem saber como reagir. As outras 10% viram o jogo.</p>
+      <h1>Menopausa sem tabu: a fase que pode libertar sua vida</h1>
+      <p>Milhares de mulheres vivem esse momento sem orientação. Outras aprendem a virar o jogo.</p>
       <img src="assets/img/capa.png" alt="Menopausa Sem Tabu">
-      <a href="#checkout" class="btn btn-primary">Quero agora o segredo que ninguém me contou</a>
+      <a href="#checkout" class="btn btn-primary">Quero entender meu corpo agora</a>
     </div>
   </section>
 
@@ -150,36 +141,36 @@
   <!-- PROBLEMAS -->
   <section>
     <div class="container">
-      <h2>Você sente que está perdendo o controle do seu corpo?</h2>
+      <h2 class="center">Isso está acontecendo com você?</h2>
       <ul>
-        <li>Calores repentinos que roubam seu sono</li>
-        <li>Cansaço extremo mesmo após descansar</li>
-        <li>Oscilações de humor que afastam quem você ama</li>
-        <li>Um corpo que você não reconhece mais</li>
+        <li>Ondas de calor inesperadas e desconfortáveis</li>
+        <li>Cansaço excessivo e falta de energia</li>
+        <li>Mudanças de humor sem explicação</li>
+        <li>Dificuldade em reconhecer o próprio corpo</li>
       </ul>
     </div>
   </section>
 
   <!-- SOLUÇÃO -->
-  <section class="cinza">
+  <section class="cinza center">
     <div class="container">
-      <h2>Existe um caminho novo, simples e possível</h2>
-      <p>Uma forma clara de entender seu corpo e retomar controle, confiança e bem-estar.</p>
-      <a href="#checkout" class="btn btn-primary">Clique agora e dê o primeiro passo</a>
+      <h2>Existe um caminho mais leve e consciente</h2>
+      <p>Com informação clara, você entende o que acontece com seu corpo e atravessa essa fase com segurança.</p>
+      <a href="#checkout" class="btn btn-primary">Quero esse caminho</a>
     </div>
   </section>
 
   <!-- PASSOS -->
   <section class="passos">
     <div class="container">
-      <h2>Seis passos simples para virar essa fase</h2>
+      <h2 class="center">O que você vai aprender</h2>
       <ol>
-        <li><strong>Passo 1:</strong> Entender o que está acontecendo com seu corpo</li>
-        <li><strong>Passo 2:</strong> Identificar sinais físicos e emocionais</li>
-        <li><strong>Passo 3:</strong> Reduzir sintomas de forma consciente</li>
-        <li><strong>Passo 4:</strong> Ajustar hábitos que sabotam sua energia</li>
-        <li><strong>Passo 5:</strong> Criar uma rotina alinhada ao seu novo ritmo</li>
-        <li><strong>Passo 6:</strong> Redescobrir prazer, segurança e autoestima</li>
+        <li><strong>Passo 1:</strong> Compreender as mudanças hormonais</li>
+        <li><strong>Passo 2:</strong> Reconhecer sinais físicos e emocionais</li>
+        <li><strong>Passo 3:</strong> Reduzir sintomas com escolhas conscientes</li>
+        <li><strong>Passo 4:</strong> Ajustar hábitos diários</li>
+        <li><strong>Passo 5:</strong> Criar uma rotina equilibrada</li>
+        <li><strong>Passo 6:</strong> Resgatar autoestima e bem-estar</li>
       </ol>
     </div>
   </section>
@@ -187,19 +178,19 @@
   <!-- DEPOIMENTOS -->
   <section class="cinza">
     <div class="container">
-      <h2>Histórias reais de mulheres comuns</h2>
+      <h2 class="center">Relatos de mulheres reais</h2>
       <div class="depoimentos-grid">
-        <div class="depoimento-card">
+        <div class="depoimento">
           <img src="assets/img/dep1.jpg" alt="Depoimento">
-          <p><strong>Patrícia, 52 anos</strong><br>Hoje eu entendo meu corpo e não tenho mais medo dessa fase.</p>
+          <p><strong>Patrícia, 52 anos</strong><br>Hoje entendo meu corpo e me sinto mais segura.</p>
         </div>
-        <div class="depoimento-card">
+        <div class="depoimento">
           <img src="assets/img/dep2.jpg" alt="Depoimento">
-          <p><strong>Renata, 49 anos</strong><br>Os sintomas diminuíram e minha confiança voltou.</p>
+          <p><strong>Renata, 49 anos</strong><br>Minha rotina mudou completamente.</p>
         </div>
-        <div class="depoimento-card">
+        <div class="depoimento">
           <img src="assets/img/dep3.jpg" alt="Depoimento">
-          <p><strong>Luciana, 45 anos</strong><br>Hoje me sinto mais segura e informada.</p>
+          <p><strong>Luciana, 45 anos</strong><br>Aprendi a respeitar meu tempo e minhas fases.</p>
         </div>
       </div>
     </div>
@@ -208,32 +199,32 @@
   <!-- BONUS -->
   <section>
     <div class="container">
-      <h2>Bônus exclusivos</h2>
+      <h2 class="center">Bônus exclusivos</h2>
       <div class="bonus">
         <h3>Receitas de infusões naturais</h3>
-        <p>Combinações simples que ajudam no equilíbrio do organismo.</p>
+        <p>Combinações simples para apoiar seu equilíbrio diário.</p>
       </div>
       <div class="bonus">
         <h3>Planner de autocuidado</h3>
-        <p>Organize sua rotina e acompanhe sinais do seu corpo.</p>
+        <p>Organize sua rotina e acompanhe seus sinais corporais.</p>
       </div>
     </div>
   </section>
 
   <!-- PREÇO -->
-  <section class="preco cinza" id="checkout">
+  <section class="preco cinza center" id="checkout">
     <div class="container">
-      <h2>Acesso completo hoje</h2>
+      <h2>Acesso completo</h2>
       <p><strong>6x R$ 10,69</strong> ou <strong>R$ 57,00 à vista</strong></p>
-      <a href="LINK_CHECKOUT" class="btn btn-primary">Quero acessar agora</a>
+      <a href="LINK_CHECKOUT" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Quero acessar agora</a>
     </div>
   </section>
 
   <!-- GARANTIA -->
-  <section class="garantia">
+  <section class="center">
     <div class="container">
       <h2>Garantia incondicional de 7 dias</h2>
-      <p>Se não fizer sentido para você, devolvemos 100% do seu investimento.</p>
+      <p>Se não fizer sentido para você, devolvemos 100% do investimento.</p>
     </div>
   </section>
 
