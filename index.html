@@ -73,5 +73,14 @@ window.addEventListener('pageLazyLoad', function () {
 <!-- FIM DO DOCUMENTO -->
 <!-- ================================ -->
 
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document
+      .querySelectorAll(".hide-delayed")
+      .forEach(el => el.classList.remove("hide-delayed"));
+  });
+</script>
+
+
 </body>
 </html>
