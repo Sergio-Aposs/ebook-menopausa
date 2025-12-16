@@ -34,6 +34,23 @@ button::-moz-focus-inner,[type='button']::-moz-focus-inner,[type='reset']::-moz-
 <body>
 
   <script>
+/* ==== HOTMART ENV MOCK (OBRIGATÓRIO) ==== */
+window.hotmartKlickartAnalyticsDeliveryUrl = "";
+window.hotmartKlickartAnalyticsSessionId = "github";
+
+/* dispara eventos que a Hotmart injeta */
+window.dispatchEvent(new Event("pageLoaded"));
+
+setTimeout(() => {
+  window.dispatchEvent(
+    new CustomEvent("timerStartDate", { detail: Date.now() })
+  );
+  window.dispatchEvent(new Event("pageLazyLoad"));
+}, 50);
+</script>
+
+
+  <script>
   document.addEventListener("DOMContentLoaded", function () {
     document
       .querySelectorAll(".hide-delayed")
@@ -72,6 +89,19 @@ window.addEventListener('pageLazyLoad', function () {
 <!-- ================================ -->
 <!-- FIM DO DOCUMENTO -->
 <!-- ================================ -->
+
+  <script>
+/* ==== FORCE VISIBILITY ==== */
+document.querySelectorAll(
+  ".hide-delayed, [data-ls-section], [data-ls-button]"
+).forEach(el => {
+  el.classList.remove("hide-delayed");
+  el.style.removeProperty("display");
+  el.style.removeProperty("opacity");
+  el.style.removeProperty("height");
+  el.style.removeProperty("visibility");
+});
+</script>
 
 
 </body>
