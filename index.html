@@ -1,108 +1,146 @@
-<!-- INDEX.HTML CONSOLIDADO PIXEL-PERFECT -->
-<!-- Página clonada fielmente a partir do HTML original Hotmart fornecido -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Menopausa sem Tabu</title>
-
-<!-- FONTES -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700&family=Raleway:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- RESET + CSS ORIGINAL INLINE HOTMART -->
-<style>
-
-/* RESET */
-*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;-webkit-text-size-adjust:100%}body{margin:0;text-align:left}
-article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
-button,[type='button'],[type='reset'],[type='submit']{-webkit-appearance:button;appearance:button}
-button::-moz-focus-inner,[type='button']::-moz-focus-inner,[type='reset']::-moz-focus-inner,[type='submit']::-moz-focus-inner{border-style:none;padding:0}
-.hide-delayed{display:none!important}
-
-/* ================================ */
-/* TODO O CSS ORIGINAL DA HOTMART   */
-/* COLADO SEM ALTERAÇÕES VISUAIS    */
-/* ================================ */
-
-/* ⚠️ OBS: aqui foi preservado exatamente o CSS inline recebido no envio */
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menopausa Sem Tabu</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; }
+    .section { padding: 60px 20px; }
+    .bg-pink { background-color: #f8e4e9; }
+    .bg-burgundy { background-color: #7a203d; color: white; }
+    .container { max-width: 1024px; margin: auto; }
+    h1, h2, h3, p { margin: 0 0 16px; }
+    .center { text-align: center; }
+    .btn-main { background-color: #7a203d; color: white; padding: 16px 32px; text-decoration:none; font-size: 18px; border-radius: 6px; }
+    .faq-item { margin-bottom: 20px; }
+  </style>
 </head>
-
 <body>
 
-  <script>
-/* ==== HOTMART ENV MOCK (OBRIGATÓRIO) ==== */
-window.hotmartKlickartAnalyticsDeliveryUrl = "";
-window.hotmartKlickartAnalyticsSessionId = "github";
+<!-- BLOCO 1 -->
+<section class="section bg-pink center">
+  <div class="container">
+    <h1>Menopausa sem tabu: A fase que pode destruir ou libertar sua vida está acontecendo agora!</h1>
+    <p>90% das mulheres passam por isso sem saber como reagir. As outras 10% viram o jogo.</p>
+    <img src="imag1.jpg" alt="Imagem principal produto" width="600">
+    <p>Se você acha que está apenas "envelhecendo", está enganada...</p>
+    <img src="imag2.jpg" alt="Vídeo destaque" width="560">
+    <a href="#compra" class="btn-main">Quero agora o segredo que ninguém me contou!</a>
+  </div>
+</section>
 
-/* dispara eventos que a Hotmart injeta */
-window.dispatchEvent(new Event("pageLoaded"));
+<!-- BLOCO 2/3/4 -->
+<section class="section bg-burgundy center">
+  <div class="container">
+    <h2>Você sente que está perdendo o controle do seu corpo?</h2>
+    <div>
+      <img src="imag3.jpg" alt="Ícone 01" width="80">
+      <img src="imag4.jpg" alt="Ícone 02" width="80">
+      <img src="imag5.jpg" alt="Ícone 03" width="80">
+      <img src="imag6.jpg" alt="Ícone 04" width="80">
+    </div>
+    <p>Se sim… Continue lendo!</p>
 
-setTimeout(() => {
-  window.dispatchEvent(
-    new CustomEvent("timerStartDate", { detail: Date.now() })
-  );
-  window.dispatchEvent(new Event("pageLazyLoad"));
-}, 50);
-</script>
+    <h3>Seis passos simples para uma mudança poderosa:</h3>
+    <ul>
+      <li>PASSO 1 – Entenda de verdade o que acontece com seu corpo.</li>
+      <li>PASSO 2 – Reconheça sinais e emoções sem medo.</li>
+      <li>PASSO 3 – Adapte-se e recupere sua confiança.</li>
+      <li>PASSO 4 – Conheça recursos acessíveis que funcionam.</li>
+      <li>PASSO 5 – Construa novos hábitos que sustentam sua energia.</li>
+      <li>PASSO 6 – Redescubra o prazer de viver sua melhor fase.</li>
+    </ul>
+    <a href="#compra" class="btn-main">Clique agora e dê o primeiro passo</a>
+  </div>
+</section>
 
+<!-- BLOCO 5 -->
+<section class="section bg-pink center">
+  <div class="container">
+    <h2>História Reais de Mulheres Que Viraram o Jogo</h2>
+    <img src="imag7.jpg" alt="Depoimento 01" width="180">
+    <img src="imag8.jpg" alt="Depoimento 02" width="180">
+    <img src="imag9.jpg" alt="Depoimento 03" width="180">
+    <p>Centenas de mulheres decidiram dizer "chega" para noites mal dormidas...</p>
+    <a href="#compra" class="btn-main">Sim! Quero começar minha transformação!</a>
+  </div>
+</section>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document
-      .querySelectorAll(".hide-delayed")
-      .forEach(el => el.classList.remove("hide-delayed"));
-  });
-</script>
+<!-- BLOCO 6/7 -->
+<section class="section bg-burgundy center">
+  <div class="container">
+    <h2>2 Presentes Que Vão Transformar Sua Rotina Agora!</h2>
+    <div>
+      <img src="imag10.jpg" alt="Bônus 1" width="100">
+      <img src="imag11.jpg" alt="Bônus 2" width="100">
+    </div>
+    <a href="#compra" class="btn-main">Sim! Quero o Guia e os bônus antes que a oferta acabe!</a>
+  </div>
+</section>
 
+<!-- BLOCO 8/9 – Oferta -->
+<section class="section bg-pink center" id="compra">
+  <div class="container">
+    <img src="imag12.jpg" alt="Oferta produto" width="600">
+    <h2>Você não vai pagar os R$171,00 que esse material vale…</h2>
+    <p>Hoje, seu investimento completo é de apenas <strong>R$10,69</strong> ou R$57 à vista.</p>
+    <a href="https://pay.hotmart.com/..." class="btn-main">Sim! Quero transformar minha vida!</a>
 
-<!-- ================================ -->
-<!-- ESTRUTURA HTML ORIGINAL HOTMART -->
-<!-- ================================ -->
+    <div class="guarantee">
+      <img src="imag13.jpg" alt="Garantia 100%" width="200">
+      <h3>Você tem 07 dias de Garantia Incondicional – Sem risco. Sem pressão.</h3>
+      <p>Se não amar o conteúdo, seu dinheiro é devolvido sem perguntas ou burocracia.</p>
+    </div>
+  </div>
+</section>
 
-<div id="ls-19fb9ab9-0607-495b-a9c1-e179a02a2af3" class="ls-page">
+<!-- BLOCO 10 -->
+<section class="section bg-pink center">
+  <div class="container">
+    <h2>Quem está por trás dessa transformação?</h2>
+    <img src="imag14.jpg" alt="Foto Sophia Andrade" width="240">
+    <p>Sou Sophia Andrade, criadora do movimento Menopausa Sem Tabu...</p>
+  </div>
+</section>
 
-<!-- 🔹 TODAS AS SECTIONS, ROWS, COLUMNS E TEXTOS -->
-<!-- 🔹 IDs ls-* preservados -->
-<!-- 🔹 Fontes, cores, espaçamentos e hierarquia intactos -->
+<!-- BLOCO 11 – FAQ -->
+<section class="section bg-pink">
+  <div class="container">
+    <h2>FAQ – Perguntas Frequentes?</h2>
 
-<!-- ⚠️ OBS: Todo o HTML fornecido foi mantido sem alterações estruturais -->
+    <div class="faq-item">
+      <h3>Este eBook é para todas as mulheres?</h3>
+      <p>Sim, independente da idade, este guia foi criado para acolher você onde estiver nessa fase.</p>
+    </div>
 
-</div>
+    <div class="faq-item">
+      <h3>É difícil de aplicar?</h3>
+      <p>Não! É simples, direto e pensado para a vida real.</p>
+    </div>
 
-<!-- ================================ -->
-<!-- SCRIPTS ESSENCIAIS (SEM HOTMART) -->
-<!-- ================================ -->
+    <div class="faq-item">
+      <h3>Tenho acesso imediato?</h3>
+      <p>Sim, assim que confirmar, você recebe tudo agora.</p>
+    </div>
 
-<script>
-/* Timer visual (mantido) */
-window.addEventListener('pageLazyLoad', function () {
-  setInterval(function () {
-    window.dispatchEvent(new CustomEvent('timerTick'));
-  }, 1000);
-});
-</script>
+    <div class="faq-item">
+      <h3>E se eu não gostar?</h3>
+      <p>Sem riscos: você tem 7 dias de garantia para decidir.</p>
+    </div>
+  </div>
+</section>
 
-<!-- ================================ -->
-<!-- FIM DO DOCUMENTO -->
-<!-- ================================ -->
-
-  <script>
-/* ==== FORCE VISIBILITY ==== */
-document.querySelectorAll(
-  ".hide-delayed, [data-ls-section], [data-ls-button]"
-).forEach(el => {
-  el.classList.remove("hide-delayed");
-  el.style.removeProperty("display");
-  el.style.removeProperty("opacity");
-  el.style.removeProperty("height");
-  el.style.removeProperty("visibility");
-});
-</script>
-
+<!-- BLOCO 12 – Decisão Final -->
+<section class="section bg-pink center">
+  <div class="container">
+    <h2>A decisão é sua e pode transformar tudo a partir de agora.</h2>
+    <p>Você está diante da chance real de viver a menopausa de forma leve, equilibrada e consciente.</p>
+    <p>Em vez de depender de remédios caros, consultas constantes e noites mal dormidas...</p>
+    <p><strong>GARANTIA INCONDICIONAL DE 7 DIAS</strong> — Se não amar o conteúdo, seu dinheiro é devolvido sem complicação.</p>
+    <a href="https://pay.hotmart.com/..." class="btn-main">Quero virar esse jogo agora!</a>
+  </div>
+</section>
 
 </body>
 </html>
