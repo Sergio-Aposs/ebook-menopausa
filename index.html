@@ -1,179 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Menopausa Sem Tabu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menopausa Sem Tabu – Transforme Sua Vida Agora</title>
 
-<!-- Fontes padrão Hotmart -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="Guia Menopausa Sem Tabu. Entenda seu corpo, alivie sintomas e viva essa fase com equilíbrio, leveza e bem-estar.">
+  <meta name="robots" content="index, follow">
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Raleway',sans-serif;color:#333;background:#fff}
-.container{max-width:960px;margin:0 auto;padding:0 20px}
-section{padding:80px 0}
-h1,h2,h3{text-align:center;color:#8A2C4B}
-h1{font-size:44px;font-weight:800;margin-bottom:20px}
-h2{font-size:28px;font-weight:700;margin-bottom:18px}
-h3{font-size:22px;font-weight:600;margin-bottom:16px}
-p{font-family:'Nunito Sans',sans-serif;font-size:16px;line-height:1.6;text-align:center;margin-bottom:16px}
+  <!-- Fonts (Hotmart-like) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-.bg-light-pink{background:#FDECEF}
-.bg-wine{background:#8A2C4B;color:#fff}
-.bg-wine h1,.bg-wine h2,.bg-wine h3,.bg-wine p{color:#fff}
-.bg-black{background:#1A1A1A;color:#fff}
-.bg-black h1,.bg-black h2,.bg-black h3,.bg-black p{color:#fff}
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Raleway',sans-serif;color:#1c1c1c;background:#fff}
+    section{padding:90px 0}
+    .container{max-width:980px;margin:0 auto;padding:0 20px}
+    h1,h2,h3{text-align:center}
+    h1{font-size:44px;font-weight:800;color:#8A2C4B;margin-bottom:25px}
+    h2{font-size:30px;font-weight:700;margin-bottom:22px}
+    h3{font-size:22px;font-weight:600;margin-bottom:18px}
+    p{font-family:'Nunito Sans',sans-serif;font-size:16px;line-height:1.6;text-align:center;margin-bottom:14px}
 
-.video-wrapper{max-width:720px;margin:40px auto;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
-.video-wrapper iframe{width:100%;height:100%;border:0}
+    .bg-pink{background:#FDECEF}
+    .bg-wine{background:#8A2C4B;color:#fff}
+    .bg-wine h1,.bg-wine h2,.bg-wine h3,.bg-wine p{color:#fff}
+    .bg-dark{background:#1A1A1A;color:#fff}
+    .bg-dark h1,.bg-dark h2,.bg-dark h3,.bg-dark p{color:#fff}
 
-.cta-wrapper{text-align:center;margin-top:40px}
-.btn-hotmart{display:inline-block;background:#E63973;color:#fff;font-size:18px;font-weight:800;padding:18px 36px;border-radius:50px;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+    .video{max-width:760px;margin:40px auto;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
+    .video iframe{width:100%;height:100%;border:0}
 
-.image-placeholder{width:100%;height:260px;background:#ddd;border-radius:16px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#666;margin:30px 0}
+    .cta{text-align:center;margin-top:40px}
+    .btn{display:inline-block;background:#E63973;color:#fff;padding:20px 44px;border-radius:60px;font-size:18px;font-weight:800;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.25)}
 
-/* BLOCO DEPOIMENTOS */
-.depoimentos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px}
-.depoimento{text-align:center}
-.depoimento .image-placeholder{height:420px}
+    .ph{width:100%;height:280px;background:#ddd;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#666;margin:35px 0}
 
-/* BLOCO PREÇO */
-.preco-box{text-align:center}
-.preco-parcelas{font-size:28px;font-weight:700;margin-top:10px}
-.preco-valor{font-size:52px;font-weight:800;color:#E63973;margin:10px 0}
+    /* Depoimentos */
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
+    .test{background:#fff;border-radius:14px;padding:20px}
+    .test .ph{height:380px;margin:0 0 15px}
+    .person{display:flex;align-items:center;gap:12px;justify-content:center}
+    .avatar{width:48px;height:48px;border-radius:50%;background:#ccc}
 
-/* FAQ */
-.faq-item{margin-bottom:20px}
-.faq-item h3{text-align:left}
-.faq-item p{text-align:left}
-
-/* MOBILE */
-@media(max-width:768px){
-section{padding:50px 0}
-h1{font-size:26px}
-h2{font-size:20px}
-h3{font-size:18px}
-p{font-size:15px}
-.depoimentos-grid{grid-template-columns:1fr}
-.depoimento .image-placeholder{height:360px}
-.btn-hotmart{font-size:16px;padding:16px 28px}
-}
-
-  /* =========================
-BLOCO 1 – HERO (HOTMART)
-========================= */
-
-.bg-light-pink:first-of-type {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.bg-light-pink:first-of-type h1 {
-  max-width: 760px;
-  margin: 0 auto 20px auto;
-  font-size: 44px;
-  line-height: 1.15;
-}
-
-.bg-light-pink:first-of-type h3 {
-  max-width: 640px;
-  margin: 0 auto 30px auto;
-  font-weight: 600;
-}
-
-.bg-light-pink:first-of-type .image-placeholder {
-  max-width: 420px;
-  margin: 30px auto 40px auto;
-}
-
-.bg-light-pink:first-of-type .video-wrapper {
-  max-width: 720px;
-  margin: 40px auto;
-}
-
-.bg-light-pink:first-of-type .cta-wrapper {
-  margin-top: 40px;
-}
-/* BLOCO 1 – HERO MOBILE */
-
-.bg-light-pink:first-of-type h1 {
-  font-size: 26px;
-}
-
-.bg-light-pink:first-of-type h3 {
-  font-size: 17px;
-}
-
-.bg-light-pink:first-of-type .image-placeholder {
-  max-width: 100%;
-}
-
-</style>
+    /* Mobile */
+    @media(max-width:768px){
+      section{padding:55px 0}
+      h1{font-size:26px}
+      h2{font-size:21px}
+      h3{font-size:18px}
+      p{font-size:15px}
+      .testimonials{grid-template-columns:1fr}
+      .btn{font-size:16px;padding:16px 28px}
+    }
+  </style>
 </head>
 <body>
 
 <!-- BLOCO 1 -->
-<section class="bg-light-pink">
-<div class="container">
-<h1>Menopausa Sem Tabu</h1>
-<h3>Um guia que pode libertar sua vida agora</h3>
-<div class="image-placeholder">imagem1</div>
-<div class="video-wrapper"><iframe src=""></iframe></div>
-<div class="cta-wrapper"><a href="https://pay.hotmart.com/F99557928M" class="btn-hotmart">QUERO TRANSFORMAR MINHA VIDA</a></div>
-</div>
+<section class="bg-pink">
+  <div class="container">
+    <h1>Menopausa sem tabu: a fase que pode destruir ou libertar sua vida está acontecendo agora</h1>
+    <h3>Descubra como atravessar essa fase com equilíbrio, leveza e bem-estar</h3>
+    <div class="video"><iframe src=""></iframe></div>
+    <div class="cta"><a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">QUERO TRANSFORMAR MINHA VIDA</a></div>
+  </div>
 </section>
 
-<!-- BLOCO 5 – DEPOIMENTOS -->
-<section class="bg-light-pink">
-<div class="container">
-<h2>Histórias Reais</h2>
-<div class="depoimentos-grid">
-<div class="depoimento"><div class="image-placeholder">imagem dep 1</div><p>Patrícia, 52 anos</p></div>
-<div class="depoimento"><div class="image-placeholder">imagem dep 2</div><p>Renata, 49 anos</p></div>
-<div class="depoimento"><div class="image-placeholder">imagem dep 3</div><p>Luciana, 45 anos</p></div>
-</div>
-</div>
+<!-- BLOCO 2 -->
+<section class="bg-wine">
+  <div class="container">
+    <h2>Você sente que está perdendo o controle do seu corpo?</h2>
+    <p>Ondas de calor, cansaço extremo, mudanças de humor, insegurança…</p>
+    <p>Você não está sozinha — e não é culpa sua.</p>
+  </div>
 </section>
 
-<!-- BLOCO PREÇOS -->
-<section class="bg-white">
-<div class="container preco-box">
-<h2>Oferta Especial</h2>
-<p class="preco-parcelas">6x de</p>
-<p class="preco-valor">R$ 10,69</p>
-<p>ou R$ 57,00 à vista</p>
-<div class="cta-wrapper"><a href="https://pay.hotmart.com/F99557928M" class="btn-hotmart">GARANTIR AGORA</a></div>
-</div>
+<!-- BLOCO 3 -->
+<section>
+  <div class="container">
+    <h2>A menopausa silencia milhões de mulheres</h2>
+    <p>Mas você não nasceu para viver confusa, exausta ou invisível.</p>
+    <div class="ph">imagem1</div>
+  </div>
 </section>
 
-<!-- BLOCO GARANTIA -->
-<section class="bg-black">
-<div class="container">
-<h2>Garantia Incondicional de 7 Dias</h2>
-<p>Ou você ama ou devolvemos seu dinheiro.</p>
-<div class="image-placeholder">imagem garantia</div>
-</div>
+<!-- BLOCO 4 -->
+<section class="bg-wine">
+  <div class="container">
+    <h2>Seis passos simples para uma mudança poderosa</h2>
+    <p>Entendimento • Consciência • Controle • Energia • Confiança • Bem-estar</p>
+    <div class="cta"><a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">COMEÇAR AGORA</a></div>
+  </div>
 </section>
 
-<!-- BLOCO FAQ -->
-<section class="bg-white">
-<div class="container">
-<h2>Perguntas Frequentes</h2>
-<div class="faq-item"><h3>O acesso é imediato?</h3><p>Sim, após a confirmação.</p></div>
-<div class="faq-item"><h3>Funciona para mim?</h3><p>Sim, foi criado para mulheres em todas as fases.</p></div>
-</div>
+<!-- BLOCO 5 -->
+<section class="bg-pink">
+  <div class="container">
+    <h2>Histórias reais de mulheres que viraram o jogo</h2>
+    <div class="testimonials">
+      <div class="test"><div class="ph">depoimento 1</div><div class="person"><div class="avatar"></div><span>Patrícia, 52</span></div></div>
+      <div class="test"><div class="ph">depoimento 2</div><div class="person"><div class="avatar"></div><span>Renata, 49</span></div></div>
+      <div class="test"><div class="ph">depoimento 3</div><div class="person"><div class="avatar"></div><span>Luciana, 45</span></div></div>
+    </div>
+  </div>
 </section>
 
-<!-- DECISÃO FINAL -->
-<section class="bg-light-pink">
-<div class="container">
-<h2>A decisão é sua</h2>
-<p>Você pode continuar como está ou transformar sua vida agora.</p>
-<div class="cta-wrapper"><a href="https://pay.hotmart.com/F99557928M" class="btn-hotmart">QUERO COMEÇAR AGORA</a></div>
-</div>
+<!-- BLOCO 6 -->
+<section class="bg-wine">
+  <div class="container">
+    <h2>2 bônus exclusivos para acelerar sua transformação</h2>
+    <div class="ph">imagem bônus 1</div>
+    <div class="ph">imagem bônus 2</div>
+  </div>
+</section>
+
+<!-- BLOCO 7 -->
+<section class="bg-dark">
+  <div class="container">
+    <h2>O que está incluso</h2>
+    <p>Guia completo + materiais extras + suporte Hotmart</p>
+  </div>
+</section>
+
+<!-- BLOCO 8 (PREÇO) -->
+<section>
+  <div class="container">
+    <h2>Hoje você não paga R$ 171,00</h2>
+    <h1>6x de R$ 10,69</h1>
+    <p>ou R$ 57 à vista</p>
+    <div class="cta"><a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">GARANTIR MEU ACESSO</a></div>
+  </div>
+</section>
+
+<!-- BLOCO 9 (GARANTIA) -->
+<section class="bg-dark">
+  <div class="container">
+    <h2>Garantia incondicional de 7 dias</h2>
+    <p>Ou você ama, ou seu dinheiro é devolvido</p>
+    <div class="ph">imagem garantia</div>
+  </div>
+</section>
+
+<!-- BLOCO 10 -->
+<section class="bg-pink">
+  <div class="container">
+    <h2>Quem está por trás</h2>
+    <p>Sophia Andrade</p>
+    <div class="ph">foto autora</div>
+  </div>
+</section>
+
+<!-- BLOCO 11 (FAQ) -->
+<section>
+  <div class="container">
+    <h2>Perguntas frequentes</h2>
+    <p><strong>É para todas as idades?</strong><br>Sim.</p>
+    <p><strong>Tenho acesso imediato?</strong><br>Sim.</p>
+    <p><strong>E se eu não gostar?</strong><br>7 dias de garantia.</p>
+  </div>
+</section>
+
+<!-- BLOCO 12 (DECISÃO FINAL) -->
+<section class="bg-pink">
+  <div class="container">
+    <h2>A decisão é sua</h2>
+    <p>Transformar sua vida começa agora</p>
+    <div class="cta"><a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">QUERO VIRAR ESSE JOGO</a></div>
+  </div>
 </section>
 
 </body>
