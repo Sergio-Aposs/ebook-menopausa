@@ -78,6 +78,57 @@ section{padding:60px 0}
   }
 }
 
+  /* BLOCO 4 – PASSOS HOTMART */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.steps-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: left;
+}
+
+.step-number {
+  font-size: 26px;
+  font-weight: 800;
+  color: #8A2C4B; /* uva */
+  margin-bottom: 8px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8A2C4B;
+  margin-bottom: 6px;
+}
+
+.step-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+
 </style>
 </head>
 
@@ -162,15 +213,81 @@ section{padding:60px 0}
 
 <!-- BLOCO 4 -->
 <section class="bg-wine">
-<div class="container">
-<h2>Seis passos simples para mudar tudo</h2>
-<p>✔ Entender seu corpo</p>
-<p>✔ Reconhecer sinais</p>
-<p>✔ Criar hábitos sustentáveis</p>
+  <div class="container">
 
-<a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">DAR O PRIMEIRO PASSO</a>
-</div>
+    <h2>Seis passos simples para uma mudança poderosa</h2>
+
+    <div class="steps-grid">
+
+      <!-- COLUNA 1 -->
+      <div class="steps-column">
+
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-title">Entenda o que acontece com seu corpo</div>
+          <div class="step-text">
+            Compreenda de forma clara e sem medo as mudanças hormonais que estão por trás dos sintomas.
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-title">Reconheça sinais e emoções</div>
+          <div class="step-text">
+            Aprenda a identificar o que é físico e o que é emocional, sem culpa ou julgamento.
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-title">Adapte-se com segurança</div>
+          <div class="step-text">
+            Descubra como ajustar sua rotina para recuperar equilíbrio, energia e confiança.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COLUNA 2 -->
+      <div class="steps-column">
+
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-title">Conheça recursos acessíveis</div>
+          <div class="step-text">
+            Saiba quais alternativas naturais e práticas realmente funcionam no dia a dia.
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">05</div>
+          <div class="step-title">Construa novos hábitos</div>
+          <div class="step-text">
+            Crie uma base sólida de autocuidado que sustenta sua saúde física e emocional.
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">06</div>
+          <div class="step-title">Redescubra o prazer de viver</div>
+          <div class="step-text">
+            Volte a se sentir bem consigo mesma e viva essa fase com leveza e autonomia.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="cta-wrapper">
+      <a href="https://pay.hotmart.com/F99557928M" target="_blank" class="btn-hotmart">
+        Clique agora e dê o primeiro passo
+      </a>
+    </div>
+
+  </div>
 </section>
+
 
 <!-- BLOCO 5 -->
 <section class="bg-pink">
