@@ -51,6 +51,33 @@ h3{font-size:18px}
 .grid-3{grid-template-columns:1fr}
 section{padding:60px 0}
 }
+
+  /* BLOCO 2 – GRID DE IMAGENS */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.grid-4-item {
+  text-align: center;
+}
+
+.grid-4-item p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 </style>
 </head>
 
@@ -82,23 +109,45 @@ section{padding:60px 0}
 
 <!-- BLOCO 2 -->
 <section class="bg-wine">
-<div class="container">
-<h2>Você sente que está perdendo o controle do seu corpo?</h2>
+  <div class="container">
+    
+    <h2>
+      Você sente que está perdendo o controle do seu corpo, como se ninguém te entendesse, nem mesmo você?
+    </h2>
 
-<div class="grid-3">
-<p>Calores intensos</p>
-<p>Cansaço extremo</p>
-<p>Oscilações de humor</p>
-</div>
+    <div class="grid-4">
 
-<p style="margin-top:30px">
-Não é culpa sua. Mas continuar no escuro é uma escolha.  
-Este guia é a lanterna que ilumina o caminho.
-</p>
+      <div class="grid-4-item">
+        <div class="image-placeholder">imagem 01</div>
+        <p>Calores que surgem do nada e roubam seu sono</p>
+      </div>
 
-<div class="placeholder">img-sintomas.png</div>
-</div>
+      <div class="grid-4-item">
+        <div class="image-placeholder">imagem 02</div>
+        <p>Cansaço constante que drena sua energia</p>
+      </div>
+
+      <div class="grid-4-item">
+        <div class="image-placeholder">imagem 03</div>
+        <p>Oscilações de humor que afastam quem você ama</p>
+      </div>
+
+      <div class="grid-4-item">
+        <div class="image-placeholder">imagem 04</div>
+        <p>Um corpo que muda e você não reconhece mais</p>
+      </div>
+
+    </div>
+
+    <p style="margin-top:40px; max-width:800px; margin-left:auto; margin-right:auto;">
+      Se sim, você não precisa mais viver essa fase sozinha, confusa ou com medo.
+      <br><br>
+      Não é culpa sua. Mas continuar no escuro sobre isso é uma escolha. Este guia é a lanterna que vai iluminar o caminho, sem truques, sem hormônios caros, apenas a verdade e as soluções que funcionam.
+    </p>
+
+  </div>
 </section>
+
 
 <!-- BLOCO 3 -->
 <section>
