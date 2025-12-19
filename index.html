@@ -1,203 +1,243 @@
-<!-- BLOCO 1 – HERO HOTMART -->
-<section class="hero-hotmart">
-  <div class="hero-container">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menopausa Sem Tabu</title>
 
-    <h1 class="hero-title">
-      Menopausa sem tabu: A fase que pode destruir ou libertar sua vida está acontecendo agora!
-    </h1>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <p class="hero-subtitle">
-      90% das mulheres passam pela menopausa sem entender o que está acontecendo com o próprio corpo.
-    </p>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Raleway,sans-serif;color:#1c1c1c;background:#fff}
 
-    <!-- IMAGEM PRINCIPAL -->
-    <div class="hero-image">
-      <img src="img-hero.png" alt="Menopausa Sem Tabu">
-    </div>
+.container{max-width:960px;margin:auto;padding:0 20px}
+section{padding:80px 0;text-align:center}
 
-    <p class="hero-text">
-      Se você acha que está apenas “envelhecendo”, sentindo calores intensos, cansaço extremo,
-      mudanças de humor e um corpo que parece não responder mais…  
-      este guia revela verdades que ninguém te contou — e que podem mudar o rumo da sua vida.
-    </p>
+h1{font-size:44px;font-weight:800;margin-bottom:20px}
+h2{font-size:30px;font-weight:700;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:16px}
+p{font-family:'Nunito Sans',sans-serif;font-size:16px;line-height:1.6;margin-bottom:14px}
 
-    <!-- CTA PRINCIPAL -->
-  <!-- TÍTULO DO VÍDEO -->
-<h3 class="hero-video-title">
-  Assista agora e descubra o que ninguém te contou sobre a menopausa
-</h3>
+.bg-pink{background:#fdecef}
+.bg-wine{background:#8a2c4b;color:#fff}
+.bg-dark{background:#1a1a1a;color:#fff}
+.bg-wine h1,.bg-wine h2,.bg-wine h3,.bg-wine p,
+.bg-dark h1,.bg-dark h2,.bg-dark h3,.bg-dark p{color:#fff}
 
-<!-- VÍDEO -->
-<div class="hero-video">
-  <iframe 
-    src="" 
-    title="Vídeo Menopausa Sem Tabu"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
+.video{max-width:720px;margin:40px auto;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.video iframe{width:100%;height:100%;border:0}
 
-<!-- CTA PRINCIPAL -->
-<div class="hero-cta">
-  <a href="https://pay.hotmart.com/F99557928M" class="btn-hero" target="_blank">
-    Quero agora o segredo que ninguém me contou!
-  </a>
-</div>
+.btn{display:inline-block;background:#e63973;color:#fff;font-weight:800;
+padding:18px 40px;border-radius:50px;text-decoration:none;margin-top:30px}
 
-    <!-- BENEFÍCIOS -->
-    <div class="hero-benefits">
-      <span>✔ Conteúdo educativo e confiável</span>
-      <span>✔ Acesso imediato</span>
+.placeholder{background:#ddd;border-radius:12px;padding:80px 0;margin:30px 0;font-weight:700;color:#666}
 
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.depo-item{text-align:center}
+.avatar{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:10px}
+.avatar img{width:40px;height:40px;border-radius:50%}
 
-      <style>
+.faq{text-align:left;max-width:760px;margin:40px auto}
+.faq h3{margin-top:25px}
 
-<!-- CSS EXATO DO BLOCO 1 (PADRÃO HOTMART) -->        
-.hero-hotmart {
-  background: #fdecef;
-  padding: 70px 0;
+@media(max-width:768px){
+h1{font-size:26px}
+h2{font-size:22px}
+h3{font-size:18px}
+.grid-3{grid-template-columns:1fr}
+section{padding:60px 0}
 }
-
-.hero-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.hero-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 44px;
-  font-weight: 800;
-  color: #8A2C4B;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.hero-subtitle {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-.hero-image {
-  margin: 30px auto;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.hero-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-  color: #333;
-  margin: 30px auto;
-  max-width: 780px;
-}
-
-.hero-cta {
-  margin: 35px 0;
-}
-
-.btn-hero {
-  display: inline-block;
-  background: #E63973;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  padding: 18px 36px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-.hero-benefits {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 14px;
-  color: #333;
-}
-        .hero-video-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: #8A2C4B;
-  margin: 40px 0 20px;
-  text-align: center;
-}
-
-.hero-video {
-  max-width: 720px;
-  margin: 0 auto 35px;
-  aspect-ratio: 16 / 9;
-  background: #000;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.hero-video iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-
-<!-- MOBILE – HERO HOTMART -->        
-@media (max-width: 768px) {
-
-  .hero-title {
-    font-size: 26px;
-  }
-
-  .hero-subtitle {
-    font-size: 15px;
-  }
-
-  .hero-text {
-    font-size: 15px;
-  }
-
-  .btn-hero {
-    font-size: 16px;
-    padding: 16px 28px;
-  }
-
-  .hero-benefits {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .hero-video-title {
-    font-size: 18px;
-    margin: 30px 0 16px;
-  }
-
-  .hero-video {
-    margin-bottom: 30px;
-    border-radius: 10px;
-  }
-}
-
-
-
-        
 </style>
+</head>
 
-      <span>✔ Garantia de satisfação Hotmart</span>
-    </div>
+<body>
 
-  </div>
+<!-- BLOCO 1 -->
+<section class="bg-pink">
+<div class="container">
+<h1>Menopausa Sem Tabu: Um guia que pode libertar sua vida agora!</h1>
+<h3>Descubra como atravessar essa fase com equilíbrio, leveza e bem-estar.</h3>
+
+<div class="placeholder">img-produto.png</div>
+
+<h3><strong>Assista agora e veja como este guia ajuda mulheres a entenderem melhor essa fase</strong></h3>
+
+<div class="video">
+<iframe src=""></iframe>
+</div>
+
+<a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">QUERO TRANSFORMAR MINHA VIDA</a>
+
+<div style="display:flex;justify-content:center;gap:30px;margin-top:40px;flex-wrap:wrap">
+<p><strong>Conteúdo educativo</strong></p>
+<p><strong>Acesso imediato</strong></p>
+<p><strong>Garantia Hotmart</strong></p>
+</div>
+</div>
 </section>
+
+<!-- BLOCO 2 -->
+<section class="bg-wine">
+<div class="container">
+<h2>Você sente que está perdendo o controle do seu corpo?</h2>
+
+<div class="grid-3">
+<p>Calores intensos</p>
+<p>Cansaço extremo</p>
+<p>Oscilações de humor</p>
+</div>
+
+<p style="margin-top:30px">
+Não é culpa sua. Mas continuar no escuro é uma escolha.  
+Este guia é a lanterna que ilumina o caminho.
+</p>
+
+<div class="placeholder">img-sintomas.png</div>
+</div>
+</section>
+
+<!-- BLOCO 3 -->
+<section>
+<div class="container">
+<h2>A menopausa silencia milhões de mulheres</h2>
+<p>Mas você não nasceu para ser silenciada.</p>
+<p>Existe um caminho simples, natural e seguro.</p>
+
+<div class="placeholder">img-consciencia.png</div>
+</div>
+</section>
+
+<!-- BLOCO 4 -->
+<section class="bg-wine">
+<div class="container">
+<h2>Seis passos simples para mudar tudo</h2>
+<p>✔ Entender seu corpo</p>
+<p>✔ Reconhecer sinais</p>
+<p>✔ Criar hábitos sustentáveis</p>
+
+<a class="btn" href="https://pay.hotmart.com/F99557928M" target="_blank">DAR O PRIMEIRO PASSO</a>
+</div>
+</section>
+
+<!-- BLOCO 5 -->
+<section class="bg-pink">
+<div class="container">
+<h2>Histórias Reais</h2>
+
+<div class="grid-3">
+<div class="depo-item">
+<div class="placeholder">print-1.png</div>
+<div class="avatar">
+<img src="avatar1.png">
+<p>Patrícia, 52</p>
+</div>
+</div>
+
+<div class="depo-item">
+<div class="placeholder">print-2.png</div>
+<div class="avatar">
+<img src="avatar2.png">
+<p>Renata, 49</p>
+</div>
+</div>
+
+<div class="depo-item">
+<div class="placeholder">print-3.png</div>
+<div class="avatar">
+<img src="avatar3.png">
+<p>Luciana, 45</p>
+</div>
+</div>
+</div>
+
+<div class="video">
+<iframe src=""></iframe>
+</div>
+
+<a class="btn" href="https://pay.hotmart.com/F99557928M">COMEÇAR AGORA</a>
+</div>
+</section>
+
+<!-- BLOCO 6 -->
+<section class="bg-wine">
+<div class="container">
+<h2>Bônus Exclusivos</h2>
+
+<div class="placeholder">bonus-1.png</div>
+<p>Receitas naturais para equilíbrio hormonal</p>
+
+<div class="placeholder">bonus-2.png</div>
+<p>Planner de autocuidado feminino</p>
+
+<a class="btn" href="https://pay.hotmart.com/F99557928M">QUERO OS BÔNUS</a>
+</div>
+</section>
+
+<!-- BLOCO 7 -->
+<section class="bg-dark">
+<div class="container">
+<h2>Tudo isso por apenas R$ 57,00</h2>
+<p>Valor real: R$ 171,00</p>
+</div>
+</section>
+
+<!-- BLOCO 8 -->
+<section>
+<div class="container">
+<h2>6x de R$ 10,69</h2>
+<p>ou R$ 57,00 à vista</p>
+<a class="btn" href="https://pay.hotmart.com/F99557928M">GARANTIR ACESSO</a>
+</div>
+</section>
+
+<!-- BLOCO 9 -->
+<section class="bg-dark">
+<div class="container">
+<h2>Garantia Incondicional de 7 Dias</h2>
+<p>Ou você ama, ou seu dinheiro volta.</p>
+<div class="placeholder">selo-garantia.png</div>
+</div>
+</section>
+
+<!-- BLOCO 10 -->
+<section class="bg-pink">
+<div class="container">
+<h2>Quem está por trás</h2>
+<p>Sophia Andrade</p>
+<div class="placeholder">foto-sophia.png</div>
+</div>
+</section>
+
+<!-- BLOCO 11 -->
+<section>
+<div class="container">
+<h2>Perguntas Frequentes</h2>
+
+<div class="faq">
+<h3>É para todas as mulheres?</h3>
+<p>Sim, independente da idade.</p>
+
+<h3>Tenho acesso imediato?</h3>
+<p>Sim, após a confirmação.</p>
+
+<h3>E se eu não gostar?</h3>
+<p>Você tem 7 dias de garantia.</p>
+</div>
+</div>
+</section>
+
+<!-- BLOCO 12 -->
+<section class="bg-pink">
+<div class="container">
+<h2>A decisão é sua</h2>
+<p>Viver com equilíbrio, ou continuar sofrendo.</p>
+<a class="btn" href="https://pay.hotmart.com/F99557928M">VIRAR ESSE JOGO AGORA</a>
+</div>
+</section>
+
+</body>
+</html>
