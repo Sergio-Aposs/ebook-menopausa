@@ -284,39 +284,7 @@ window.addEventListener('pageLazyLoad', (function () {
     _private.retryRequest = function () {
       if (_private.retries >= _private.MAX_REQUESTS_RETRY) {
         return;
-      }
-
-
- <!-- HTML (estrutura idêntica visualmente) -->    
-<div class="ls-timer-host">
-  <div class="ls-timer">
-    <div class="ls-timer-items">
-      
-      <div class="ls-timer-item">
-        <div class="ls-timer-number" id="days">0</div>
-        <div class="ls-timer-label">DIAS</div>
-      </div>
-
-      <div class="ls-timer-item">
-        <div class="ls-timer-number" id="hours">00</div>
-        <div class="ls-timer-label">HORAS</div>
-      </div>
-
-      <div class="ls-timer-item">
-        <div class="ls-timer-number" id="minutes">00</div>
-        <div class="ls-timer-label">MINUTOS</div>
-      </div>
-
-      <div class="ls-timer-item">
-        <div class="ls-timer-number" id="seconds">00</div>
-        <div class="ls-timer-label">SEGUNDOS</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-        
+      }      
 
       setTimeout(_private.sendClicks, 500);
       _private.retries += 1;
@@ -519,6 +487,39 @@ window.addEventListener('pageLazyLoad', (function () {
   margin-top: 4px;
 }
 </style>
+
+
+<!-- HTML (estrutura idêntica visualmente) -->    
+<div class="ls-timer-host">
+  <div class="ls-timer">
+    <div class="ls-timer-items">
+      
+      <div class="ls-timer-item">
+        <div class="ls-timer-number" id="days">0</div>
+        <div class="ls-timer-label">DIAS</div>
+      </div>
+
+      <div class="ls-timer-item">
+        <div class="ls-timer-number" id="hours">00</div>
+        <div class="ls-timer-label">HORAS</div>
+      </div>
+
+      <div class="ls-timer-item">
+        <div class="ls-timer-number" id="minutes">00</div>
+        <div class="ls-timer-label">MINUTOS</div>
+      </div>
+
+      <div class="ls-timer-item">
+        <div class="ls-timer-number" id="seconds">00</div>
+        <div class="ls-timer-label">SEGUNDOS</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+      
+
+      
                 
       <script type="text/javascript">
     var DELIVERY_URL = 'https://qhx31sr78i.execute-api.us-east-1.amazonaws.com/prod/v1/click_event';
