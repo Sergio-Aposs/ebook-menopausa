@@ -419,6 +419,34 @@ window.addEventListener('pageLazyLoad', (function () {
   hotmartKlickartPublicAnalyticsSubscription.init();
 }));   
 </script>
+
+
+<!-- JavaScript (contador estável – SEM localStorage) -->
+    <script>
+(function () {
+  let totalSeconds = 5 * 60; // 5 minutos
+
+  function updateTimer() {
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+
+    if (totalSeconds > 0) {
+      totalSeconds--;
+    }
+  }
+
+  updateTimer();
+  setInterval(updateTimer, 1000);
+})();
+</script> 
+      
       
       
      <!-- CSS (visual idêntico ao da Hotmart) -->
@@ -491,38 +519,7 @@ window.addEventListener('pageLazyLoad', (function () {
   </div>
 </div>
 
-    
-<!-- JavaScript (contador estável – SEM localStorage) -->
-    <script>
-(function () {
-  let totalSeconds = 5 * 60; // 5 minutos
-
-  function updateTimer() {
-    const days = Math.floor(totalSeconds / 86400);
-    const hours = Math.floor((totalSeconds % 86400) / 3600);
-    const minutes = Math.floor((totalSeconds % 3600) / 60);
-    const seconds = totalSeconds % 60;
-
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
-
-    if (totalSeconds > 0) {
-      totalSeconds--;
-    }
-  }
-
-  updateTimer();
-  setInterval(updateTimer, 1000);
-})();
-</script> 
-      
-      
-      
-      
-          
-      
+                
       <script type="text/javascript">
     var DELIVERY_URL = 'https://qhx31sr78i.execute-api.us-east-1.amazonaws.com/prod/v1/click_event';
     var PAGE_ID = 'ce83130a-f347-44ab-9550-8e275f59369f';
