@@ -1004,6 +1004,63 @@ p{
     font-size:22px;
   }
 }  
+
+/* ===== CORREÇÕES FINAIS – NÃO ALTERA LAYOUT BASE ===== */
+
+/* CONTER TODOS OS BLOCOS */
+.section > .inner{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* BLOCO 6 – BÔNUS UM EMBAIXO DO OUTRO */
+.bloco6 .bonus-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* BLOCO 8 – IMAGEM CONTIDA */
+.bloco8 img{
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
+/* BLOCOS 6 EM DIANTE – NÃO ESTOURAR LARGURA */
+.bloco6,
+.bloco7,
+.bloco8,
+.bloco9,
+.bloco10,
+.bloco11{
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/* CTA CENTRALIZADOS */
+a.btn,
+a.cta{
+  display: inline-block;
+  margin: 30px auto;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .bloco8,
+  .bloco10,
+  .bloco11{
+    text-align: center;
+  }
+
+  .bloco8 img,
+  .bloco10 img,
+  .bloco11 img{
+    margin: 0 auto 20px;
+  }
+}
+
+  
   
 </style>
 </head>
