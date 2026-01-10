@@ -134,6 +134,35 @@ p{
   }
 }
 
+.garantia-grid{
+  display:grid;
+  grid-template-columns:0.8fr 1.2fr;
+  gap:40px;
+  align-items:center;
+}
+
+.garantia-foto img{
+  width:100%;
+  max-width:260px;
+  display:block;
+  margin:0 auto;
+}
+
+.garantia-texto h2{
+  margin-bottom:20px;
+}
+
+@media(max-width:768px){
+  .garantia-grid{
+    grid-template-columns:1fr;
+  }
+
+  .garantia-foto img{
+    margin-bottom:30px;
+  }
+}
+  
+  
   
   
 </style>
@@ -222,14 +251,41 @@ p{
   </div>
 </section>
 
-<!-- BLOCO 10 -->
+<!-- BLOCO 10 – Garantia -->
 <section class="section">
-  <div class="inner">
-    <h2>Relatos de mulheres reais</h2>
-    <p>Mulheres que chegaram até aqui depois de semanas pesquisando e encontraram clareza em informação organizada.</p>
-    <a href="#oferta" class="btn">Quero aprofundar meu entendimento</a>
+  <div class="inner garantia-grid">
+
+    <!-- IMAGEM -->
+    <div class="garantia-foto">
+      <!-- Substitua o src pela sua imagem de garantia -->
+      <img src="SUA-IMAGEM-AQUI.png" alt="Garantia de 7 dias">
+    </div>
+
+    <!-- TEXTO -->
+    <div class="garantia-texto">
+      <h2>Você tem 07 dias de Garantia Incondicional – Sem risco. Sem pressão.</h2>
+
+      <p>
+        Sabemos que dar o primeiro passo pode causar insegurança. Por isso, ao garantir
+        seu acesso ao Guia Menopausa Sem Tabu, você tem <strong>7 dias inteiros</strong>
+        para experimentar o conteúdo com tranquilidade. Leia, aplique, sinta a diferença.
+      </p>
+
+      <p>
+        E se por qualquer motivo você achar que o guia não é para você, basta entrar em
+        contato com a plataforma e seu dinheiro será devolvido <strong>100%</strong>,
+        sem perguntas, sem burocracia.
+      </p>
+
+      <p>
+        Ou seja, você não corre nenhum risco, mas pode ganhar uma vida com mais bem-estar,
+        autoestima e controle sobre seu corpo.
+      </p>
+    </div>
+
   </div>
 </section>
+
 
 <!-- BLOCO 11 – Autoria -->
 <section class="section">
