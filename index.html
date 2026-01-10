@@ -78,6 +78,32 @@ p{
   p{font-size:16px;}
   .inner{padding:35px 25px;}
 }
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px 40px;
+  margin-top:40px;
+}
+
+.faq-item h3{
+  font-size:20px;
+  margin-bottom:10px;
+  color:#000;
+}
+
+.faq-item p{
+  font-size:17px;
+  margin-bottom:0;
+}
+
+@media(max-width:768px){
+  .faq-grid{
+    grid-template-columns:1fr;
+  }
+}
+  
+  
 </style>
 </head>
 
@@ -181,13 +207,43 @@ p{
   </div>
 </section>
 
-<!-- BLOCO 12 -->
+
+<!-- BLOCO 12 – FAQ -->
 <section class="section">
   <div class="inner">
-    <h2>Acesso imediato e garantia</h2>
-    <p>Conteúdo digital com acesso imediato e garantia de 7 dias para avaliar com tranquilidade.</p>
+    
+    <h2>Perguntas Frequentes</h2>
+    <p><strong>Ainda tem dúvidas?</strong> Aqui está o que você precisa saber antes de dar o próximo passo:</p>
+
+    <div class="faq-grid">
+
+      <!-- COLUNA 1 -->
+      <div class="faq-item">
+        <h3>Este eBook é para todas as mulheres?</h3>
+        <p>Sim, independente da idade, este guia foi criado para acolher você onde estiver nessa fase.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>É difícil de aplicar?</h3>
+        <p>Não! É simples, direto e pensado para a vida real.</p>
+      </div>
+
+      <!-- COLUNA 2 -->
+      <div class="faq-item">
+        <h3>Tenho acesso imediato?</h3>
+        <p>Sim, assim que o pagamento for confirmado, você receberá um email da plataforma para acessar todo o conteúdo.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>E se eu não gostar?</h3>
+        <p>Sem riscos: você tem 7 dias de garantia para decidir.</p>
+      </div>
+
+    </div>
+
   </div>
 </section>
+
 
 <!-- BLOCO 13 -->
 <section id="oferta" class="section">
