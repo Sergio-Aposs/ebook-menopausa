@@ -596,7 +596,240 @@ p{
   }
 }
 
+.bloco31{
+  background:#8a2c4b;
+}
+
+.bloco31-topo{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.bloco31-topo h2{
+  color:#ffffff;
+  font-size:26px;
+  margin-bottom:15px;
+}
+
+.bloco31-colunas{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:30px;
+  margin-bottom:40px;
+}
+
+.bloco31-item{
+  text-align:center;
+}
+
+.bloco31-item .img-placeholder{
+  width:100%;
+  max-width:260px;
+  height:180px;
+  background:#dddddd;
+  border-radius:16px;
+  margin:0 auto 15px;
+}
+
+.bloco31-item p{
+  color:#ffffff;
+  font-size:18px;
+  margin:0;
+}
+
+.bloco31-cta{
+  display:block;
+  width:fit-content;
+  margin:0 auto;
+  background:#d9b15f;
+  color:#000000;
+  padding:18px 32px;
+  border-radius:32px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+}
+
+@media(max-width:768px){
+  .bloco31-topo h2{
+    font-size:22px;
+  }
+
+  .bloco31-item p{
+    font-size:17px;
+  }
+}
+
+.bloco3{
+  background:#ffffff;
+}
+
+.bloco3-head{
+  color:#000000;
+  font-size:32px;
+  line-height:1.3;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.bloco3-text{
+  color:#000000;
+  font-size:20px;
+  line-height:1.6;
+  margin-bottom:20px;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media(max-width:768px){
+  .bloco3-head{
+    font-size:26px;
+  }
+
+  .bloco3-text{
+    font-size:18px;
+  }
+}
   
+
+.bloco2{
+  background:#8a2c4b;
+}
+
+.bloco2-head{
+  color:#ffffff;
+  font-size:34px;
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.bloco2-text{
+  color:#ffffff;
+  font-size:20px;
+  line-height:1.6;
+  max-width:900px;
+  margin:0 auto 20px;
+}
+
+@media(max-width:768px){
+  .bloco2-head{
+    font-size:28px;
+  }
+
+  .bloco2-text{
+    font-size:18px;
+  }
+}
+
+.bloco1{
+  background:#ffffff;
+  color:#000000;
+}
+
+.bloco1-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.bloco1-head{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.bloco1-subhead{
+  font-size:26px;
+  margin-bottom:20px;
+}
+
+.bloco1-descricao{
+  font-size:20px;
+  line-height:1.6;
+}
+
+.bloco1-mockup{
+  text-align:center;
+}
+
+.mockup-placeholder{
+  width:100%;
+  max-width:420px;
+  height:360px; /* 50% maior que o vídeo */
+  background:#e5e5e5;
+  border-radius:16px;
+  margin:0 auto;
+}
+
+.bloco1-apoio{
+  text-align:center;
+}
+
+.bloco1-texto-maior{
+  font-size:20px;
+  max-width:900px;
+  margin:0 auto 25px;
+  line-height:1.6;
+}
+
+.bloco1-chamada{
+  font-size:21px;
+  margin-bottom:25px;
+}
+
+.bloco1-video{
+  max-width:720px;
+  margin:0 auto 30px;
+  aspect-ratio:16/9;
+}
+
+.bloco1-video iframe{
+  width:100%;
+  height:100%;
+  border-radius:16px;
+}
+
+.bloco1-cta{
+  display:inline-block;
+  background:#d9b15f;
+  color:#000000;
+  padding:18px 34px;
+  border-radius:32px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  margin-bottom:20px;
+}
+
+.bloco1-selos{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.bloco1-selos span{
+  font-size:17px;
+  font-weight:bold;
+}
+
+@media(max-width:900px){
+  .bloco1-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .bloco1-head{
+    font-size:34px;
+  }
+
+  .bloco1-subhead{
+    font-size:22px;
+  }
+}  
   
 </style>
 </head>
@@ -605,30 +838,160 @@ p{
 
 <div class="container">
 
-<!-- BLOCO 1 -->
-<section class="section">
-  <div class="inner">
-    <h1>Menopausa Sem Tabu</h1>
-    <p>Um guia informativo e acolhedor para mulheres que desejam entender essa fase com mais clareza e consciência.</p>
-    <a href="#oferta" class="btn">Quero entender melhor essa fase</a>
+<!-- BLOCO 1 – HERO -->
+<section class="section bloco1">
+  <div class="inner bloco1-grid">
+
+    <!-- COLUNA TEXTO -->
+    <div class="bloco1-texto">
+
+      <h1 class="bloco1-head">
+        Menopausa sem tabu
+      </h1>
+
+      <h2 class="bloco1-subhead">
+        Saiba mais sobre a menopausa e seu bem-estar
+      </h2>
+
+      <p class="bloco1-descricao">
+        Um guia informativo para mulheres que querem entender a menopausa, seus sintomas e caminhos possíveis além da reposição hormonal.
+      </p>
+
+    </div>
+
+    <!-- COLUNA MOCKUP -->
+    <div class="bloco1-mockup">
+      <div class="mockup-placeholder"></div>
+    </div>
+
+  </div>
+
+  <!-- TEXTO ABAIXO -->
+  <div class="inner bloco1-apoio">
+
+    <p class="bloco1-texto-maior">
+      Se você chegou até aqui buscando entender sintomas como ondas de calor, alterações no sono ou mudanças no humor, saiba que essas dúvidas são comuns nessa fase.
+      <br><br>
+      Este guia explica de forma clara o que realmente acontece no corpo durante a menopausa e por que cada mulher vive essa fase de maneira diferente.
+    </p>
+
+    <p class="bloco1-chamada">
+      <strong>Assista agora e veja como este guia ajuda mulheres a entenderem melhor essa fase.</strong>
+    </p>
+
+    <!-- VIDEO -->
+    <div class="bloco1-video">
+      <iframe 
+        src=""
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- CTA -->
+    <a href="#oferta" class="bloco1-cta">
+      Quero entender melhor essa fase
+    </a>
+
+    <!-- SELLOS -->
+    <div class="bloco1-selos">
+      <span>Conteúdo educativo e confiável</span>
+      <span>Acesso imediato</span>
+      <span>Garantia de satisfação Hotmart</span>
+    </div>
+
   </div>
 </section>
 
-<!-- BLOCO 2 -->
-<section class="section">
+
+<!-- BLOCO 2 – Acolhimento -->
+<section class="section bloco2">
   <div class="inner">
-    <h2>Se você chegou até aqui pesquisando no Google</h2>
-    <p>É porque busca respostas claras sobre menopausa, sintomas e alternativas além da reposição hormonal.</p>
+
+    <h2 class="bloco2-head">
+      Você não está sozinha.
+    </h2>
+
+    <p class="bloco2-text">
+      Muitas mulheres chegam à menopausa cheias de dúvidas, sem entender exatamente o que está acontecendo com o próprio corpo. Mudanças físicas, emocionais e na rotina fazem parte dessa fase, e nem sempre as informações disponíveis são claras, acessíveis ou explicadas de forma simples.
+    </p>
+
+    <p class="bloco2-text">
+      Este guia foi criado para ajudar você a compreender essa transição com mais calma, clareza e acolhimento, oferecendo informação organizada e fácil de entender para apoiar suas escolhas e o seu bem-estar.
+    </p>
+
   </div>
 </section>
 
-<!-- BLOCO 3 -->
-<section class="section">
+
+
+  <!-- BLOCO 3 – Informação e acolhimento -->
+<section class="section bloco3">
   <div class="inner">
-    <h2>Você não está sozinha</h2>
-    <p>Muitas mulheres passam por essa fase sentindo confusão, medo e insegurança por falta de informação clara.</p>
+
+    <h2 class="bloco3-head">
+      A menopausa ainda é vivida em silêncio por milhões de mulheres
+    </h2>
+
+    <p class="bloco3-text">
+      Durante muito tempo, a menopausa foi tratada como um assunto que deveria ser enfrentado em silêncio. Muitas mulheres percebem mudanças físicas e emocionais, mas acabam acreditando que tudo isso faz parte apenas do envelhecimento, sem compreender o que realmente acontece no corpo e no equilíbrio emocional nessa fase.
+    </p>
+
+    <p class="bloco3-text">
+      A falta de informação clara gera insegurança, dúvidas e decisões baseadas em achismos. Quando a informação correta chega, a forma de enxergar a menopausa muda. Entender o que está acontecendo ajuda a lidar melhor com os sintomas, respeitar os próprios limites e fazer escolhas mais conscientes para o bem-estar, com mais tranquilidade e autonomia.
+    </p>
+
+    <p>É justamente por isso que ter acesso a informações claras e confiáveis faz tanta diferença nesse momento.</p>
+
   </div>
 </section>
+  
+  
+  <!-- BLOCO 3.1 – Guia informativo -->
+<section class="section bloco31">
+  <div class="inner">
+
+    <!-- HEADLINES -->
+    <div class="bloco31-topo">
+      <h2>
+        Este ebook não é um tratamento médico e não substitui o acompanhamento profissional.
+      </h2>
+      <h2>
+        Ele é um guia informativo, criado para ajudar você a:
+      </h2>
+    </div>
+
+    <!-- CONTAINER COLUNAS -->
+    <div class="bloco31-colunas">
+
+      <!-- ITEM 1 -->
+      <div class="bloco31-item">
+        <div class="img-placeholder"></div>
+        <p>Entender o que é a menopausa</p>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="bloco31-item">
+        <div class="img-placeholder"></div>
+        <p>Compreender por que os sintomas variam tanto</p>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="bloco31-item">
+        <div class="img-placeholder"></div>
+        <p>Ter mais clareza para fazer escolhas conscientes sobre seu bem-estar</p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <a href="#oferta" class="bloco31-cta">
+      Quero acessar o guia completo
+    </a>
+
+  </div>
+</section>
+
 
 <!-- BLOCO 4 – Depoimentos -->
 <section class="section bloco4">
