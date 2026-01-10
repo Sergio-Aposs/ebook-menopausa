@@ -264,6 +264,209 @@ p{
   }
 }
 
+ /* BLOCO 11 */  
+.bloco11{
+  background:#ffffff;
+}
+
+.bloco11-grid{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:40px;
+  align-items:center;
+}
+
+.bloco11-texto{
+  text-align:left;
+}
+
+.bloco11-head{
+  font-size:30px;
+  margin-bottom:20px;
+  color:#000000;
+}
+
+.bloco11-paragrafo{
+  font-size:19px;
+  line-height:1.6;
+  margin-bottom:18px;
+  color:#000000;
+}
+
+.bloco11-imagem{
+  text-align:center;
+}
+
+.bloco11-img{
+  width:100%;
+  max-width:360px;
+  height:auto;
+  border-radius:20px;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .bloco11-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .bloco11-texto{
+    text-align:center;
+  }
+
+  .bloco11-head{
+    font-size:26px;
+  }
+}
+
+  
+  
+  /* BLOCO 10 */
+.bloco10{
+  background:#ffffff;
+}
+
+.bloco10-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.bloco10-imagem{
+  text-align:center;
+}
+
+.bloco10-img{
+  width:100%;
+  max-width:360px;
+  height:auto;
+  border-radius:16px;
+}
+
+.bloco10-texto{
+  text-align:left;
+}
+
+.bloco10-head{
+  font-size:30px;
+  margin-bottom:20px;
+  color:#000000;
+}
+
+.bloco10-paragrafo{
+  font-size:19px;
+  line-height:1.6;
+  margin-bottom:18px;
+  color:#000000;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .bloco10-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .bloco10-texto{
+    text-align:center;
+  }
+
+  .bloco10-head{
+    font-size:26px;
+  }
+}
+  
+  
+  /* BLOCO 8 */
+.bloco8{
+  background:#ffffff;
+}
+
+.bloco8-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.bloco8-imagem{
+  text-align:center;
+}
+
+.bloco8-img{
+  width:100%;
+  max-width:420px;
+  height:auto;
+  border-radius:16px;
+}
+
+.bloco8-texto{
+  text-align:left;
+}
+
+.bloco8-head{
+  font-size:30px;
+  margin-bottom:10px;
+  color:#000000;
+}
+
+.preco-antigo{
+  color:#ff0000;
+  text-decoration:line-through;
+  font-weight:bold;
+}
+
+.bloco8-parcela{
+  font-size:30px;
+  color:#000000;
+  margin-bottom:10px;
+}
+
+.bloco8-parcela span{
+  color:#29ff89;
+  font-weight:bold;
+}
+
+.bloco8-avista{
+  font-size:18px;
+  margin-bottom:20px;
+  color:#000000;
+}
+
+.bloco8-descricao{
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:25px;
+  color:#000000;
+}
+
+.bloco8-cta{
+  display:inline-block;
+  background:#8a2c4b;
+  color:#ffffff;
+  padding:18px 36px;
+  border-radius:32px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .bloco8-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .bloco8-texto{
+    text-align:center;
+  }
+}
+
+  
+
 /* BLOCO 7 */
 .bloco7{
   background:#333333;
@@ -334,135 +537,115 @@ p{
   
 /* BLOCO 6 */
 .bloco6{
-  background:#fdf0f4;
-}
-
-.bloco6-container{
-  background:#8a2c4b;
-  border-radius:18px;
-  padding:30px;
-  margin-bottom:30px;
-}
-
-.bonus-grid{
-  display:grid;
-  grid-template-columns:80px 1fr;
-  gap:20px;
-  align-items:flex-start;
-}
-
-.img-placeholder{
-  width:80px;
-  height:80px;
-  background:#dddddd;
-  border-radius:12px;
-}
-
-.bonus-tag{
-  display:inline-block;
   background:#ffffff;
-  color:#000000;
-  font-weight:bold;
-  padding:4px 12px;
-  border-radius:12px;
-  margin-bottom:10px;
-}
-
-.bonus-texto h3{
-  color:#ffffff;
-  font-size:22px;
-  margin:10px 0 12px;
-}
-
-.bonus-texto p{
-  color:#ffffff;
-  font-size:17px;
-  margin:0;
-}
-
-.bloco6-head-final{
-  font-size:28px;
-  color:#000000;
-  margin:40px 0 25px;
   text-align:center;
 }
 
-.destaque-atencao{
-  background:#29ff89;
-  padding:2px 6px;
+.bloco6-head-top{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.bloco6-subtop{
+  font-size:20px;
+  margin-bottom:40px;
+}
+
+.bloco6-bonus-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  margin-bottom:40px;
+}
+
+.bloco6-bonus{
+  background:#8a2c4b;
+  padding:25px;
+  border-radius:20px;
+  display:flex;
+  gap:20px;
+  text-align:left;
+  align-items:flex-start;
+}
+
+.bloco6-img{
+  width:90px;
+  height:auto;
+  border-radius:12px;
+}
+
+.bloco6-info h3{
+  color:#ffffff;
+  margin:10px 0;
+  font-size:22px;
+}
+
+.bloco6-info p{
+  color:#ffffff;
+  font-size:17px;
+  line-height:1.5;
+}
+
+.bloco6-tag{
+  background:#ffffff;
+  color:#000000;
+  padding:6px 12px;
+  border-radius:20px;
   font-weight:bold;
+  font-size:14px;
+}
+
+.bloco6-head-final{
+  font-size:26px;
+  margin:40px 0 30px;
+}
+
+.destaque{
+  background:#29ff89;
+  padding:4px 8px;
 }
 
 .bloco6-cta{
-  display:block;
-  width:fit-content;
-  margin:0 auto 25px;
+  display:inline-block;
   background:#d9b15f;
   color:#000000;
-  padding:18px 32px;
+  padding:18px 34px;
   border-radius:32px;
   font-size:18px;
   font-weight:bold;
   text-decoration:none;
-  text-align:center;
+  margin-bottom:20px;
 }
 
 .contador{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-}
-
-.tempo{
-  background:#ff0000;
-  color:#ffffff;
-  border-radius:8px;
-  padding:10px 14px;
-  text-align:center;
-  min-width:70px;
-}
-
-.tempo span{
-  display:block;
-  font-size:22px;
+  font-size:26px;
   font-weight:bold;
+  color:#ff0000;
 }
 
-.tempo small{
-  font-size:12px;
+.contador span{
+  color:#ffffff;
+  background:#ff0000;
+  padding:6px 10px;
+  border-radius:6px;
 }
 
 /* MOBILE */
-@media(max-width:768px){
-  .bonus-grid{
+@media(max-width:900px){
+  .bloco6-bonus-grid{
     grid-template-columns:1fr;
   }
 
-  .img-placeholder{
-    margin-bottom:15px;
+  .bloco6-bonus{
+    flex-direction:column;
+    text-align:center;
   }
 
-  .bloco6-head-final{
-    font-size:24px;
+  .bloco6-img{
+    margin:0 auto;
   }
 }
 
-.bloco6-intro{
-  max-width:760px;
-  margin:0 auto 35px;
-  text-align:center;
-}
-
-.bloco6-intro p{
-  font-size:18px;
-  color:#000000;
-  margin-bottom:12px;
-}
-
-.bloco6-destaque{
-  font-size:20px;
-  margin:15px 0;
-}
   
 .bloco5-head{
   color:#000000;
@@ -593,10 +776,10 @@ p{
 
 .bloco31{
   background:#8a2c4b;
+  text-align:center;
 }
 
 .bloco31-topo{
-  text-align:center;
   margin-bottom:40px;
 }
 
@@ -617,33 +800,30 @@ p{
   text-align:center;
 }
 
-.bloco31-item .img-placeholder{
+.bloco31-img{
   width:100%;
   max-width:260px;
-  height:180px;
-  background:#dddddd;
+  height:auto;
   border-radius:16px;
   margin:0 auto 15px;
+  display:block;
 }
 
 .bloco31-item p{
   color:#ffffff;
   font-size:18px;
-  margin:0;
 }
 
 .bloco31-cta{
-  display:block;
-  width:fit-content;
-  margin:0 auto;
-  background:#d9b15f;
-  color:#000000;
-  padding:18px 32px;
+  display:inline-block;
+  background:#8a2c4b;
+  border:2px solid #ffffff;
+  color:#ffffff;
+  padding:18px 36px;
   border-radius:32px;
   font-size:18px;
   font-weight:bold;
   text-decoration:none;
-  text-align:center;
 }
 
 @media(max-width:768px){
@@ -655,6 +835,7 @@ p{
     font-size:17px;
   }
 }
+
 
 .bloco3{
   background:#ffffff;
@@ -847,54 +1028,65 @@ p{
       </h2>
 
       <p class="bloco1-descricao">
-        Um guia informativo para mulheres que querem entender a menopausa, seus sintomas e caminhos possíveis além da reposição hormonal.
+        Um guia informativo para mulheres que querem entender a menopausa,
+        seus sintomas e caminhos possíveis além da reposição hormonal.
       </p>
 
     </div>
 
     <!-- COLUNA MOCKUP -->
     <div class="bloco1-mockup">
-      <div class="mockup combo.png"></div>
+      <img
+        src="mockup_combo.png"
+        alt="Mockup do Guia Menopausa Sem Tabu"
+        class="bloco1-mockup-img"
+      >
     </div>
 
   </div>
 
-  <!-- TEXTO ABAIXO -->
+  <!-- CONTEÚDO ABAIXO -->
   <div class="inner bloco1-apoio">
 
     <p class="bloco1-texto-maior">
-      Se você chegou até aqui buscando entender sintomas como ondas de calor, alterações no sono ou mudanças no humor, saiba que essas dúvidas são comuns nessa fase.
+      Se você chegou até aqui buscando entender sintomas como ondas de calor,
+      alterações no sono ou mudanças no humor, saiba que essas dúvidas são comuns nessa fase.
       <br><br>
-      Este guia explica de forma clara o que realmente acontece no corpo durante a menopausa e por que cada mulher vive essa fase de maneira diferente.
+      Este guia explica de forma clara o que realmente acontece no corpo
+      e por que cada mulher vive essa fase de maneira diferente.
     </p>
 
     <p class="bloco1-chamada">
-      <strong>Assista agora e veja como este guia ajuda mulheres a entenderem melhor essa fase.</strong>
+      <strong>
+        Assista agora e veja como este guia ajuda mulheres a entenderem melhor essa fase.
+      </strong>
     </p>
 
     <!-- VIDEO -->
     <div class="bloco1-video">
-      <iframe 
-        src="https://youtu.be/CbEReWAKWo0"
+      <iframe
+        src="https://www.youtube.com/watch?v=CbEReWAKWo0"
         frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
     </div>
 
     <!-- CTA -->
-   <a href="#oferta" class="bloco1-cta">
-  Quero entender melhor essa fase
-</a>
+    <a href="#oferta" class="bloco1-cta">
+      Quero entender melhor essa fase
+    </a>
 
-<div class="bloco1-selos">
-  <p>Conteúdo educativo e confiável</p>
-  <p>Acesso imediato</p>
-  <p>Garantia de satisfação Hotmart</p>
-</div>
-
+    <!-- TEXTOS ABAIXO DO CTA -->
+    <div class="bloco1-selos">
+      <p><strong>Conteúdo educativo e confiável</strong></p>
+      <p><strong>Acesso imediato</strong></p>
+      <p><strong>Garantia de satisfação Hotmart</strong></p>
+    </div>
 
   </div>
 </section>
+
 
 
 <!-- BLOCO 2 – Acolhimento -->
@@ -940,7 +1132,7 @@ p{
 </section>
   
   
-  <!-- BLOCO 3.1 – Guia informativo -->
+ <!-- BLOCO 3.1 – Guia informativo -->
 <section class="section bloco31">
   <div class="inner">
 
@@ -954,24 +1146,36 @@ p{
       </h2>
     </div>
 
-    <!-- CONTAINER COLUNAS -->
+    <!-- COLUNAS -->
     <div class="bloco31-colunas">
 
       <!-- ITEM 1 -->
       <div class="bloco31-item">
-        <div class="01.jpg"></div>
+        <img 
+          src="item1.jpg" 
+          alt="Entender o que é a menopausa"
+          class="bloco31-img"
+        >
         <p>Entender o que é a menopausa</p>
       </div>
 
       <!-- ITEM 2 -->
       <div class="bloco31-item">
-        <div class="02.jpg"></div>
+        <img 
+          src="item2.jpg" 
+          alt="Por que os sintomas da menopausa variam"
+          class="bloco31-img"
+        >
         <p>Compreender por que os sintomas variam tanto</p>
       </div>
 
       <!-- ITEM 3 -->
       <div class="bloco31-item">
-        <div class="03.jpg"></div>
+        <img 
+          src="item3.jpg" 
+          alt="Fazer escolhas conscientes na menopausa"
+          class="bloco31-img"
+        >
         <p>Ter mais clareza para fazer escolhas conscientes sobre seu bem-estar</p>
       </div>
 
@@ -984,6 +1188,7 @@ p{
 
   </div>
 </section>
+
 
 <!-- BLOCO 4 – Depoimentos -->
 <section class="section bloco4">
@@ -1171,21 +1376,34 @@ p{
 </section>
   
   
-  <!-- BLOCO 6 – Bônus e urgência -->
+ <!-- BLOCO 6 – Bônus -->
 <section class="section bloco6">
   <div class="inner">
 
-    <!-- CONTAINER 1 -->
-    <div class="bloco6-container">
-      <div class="bonus-grid">
+    <!-- HEADLINE SUPERIOR -->
+    <h2 class="bloco6-head-top">
+      Ao adquirir o guia, você também terá acesso a materiais complementares, como:
+      <br><br>
+      <strong>2 presentes com sugestões de práticas de autocuidado e organização da rotina</strong>
+    </h2>
 
-        <div class="bonus-img">
-          <!-- imagem pequena -->
-          <div class="Bonus1.png"></div>
-        </div>
+    <p class="bloco6-subtop">
+      Esses bônus são materiais adicionais para apoiar seu aprendizado.
+    </p>
 
-        <div class="bonus-texto">
-          <span class="bonus-tag">Bônus 1</span>
+    <!-- CONTAINERS -->
+    <div class="bloco6-bonus-grid">
+
+      <!-- BONUS 1 -->
+      <div class="bloco6-bonus">
+        <img
+          src="bonus1.png"
+          alt="Bônus 1 - Receitas de infusões"
+          class="bloco6-img"
+        >
+
+        <div class="bloco6-info">
+          <span class="bloco6-tag">Bônus 1</span>
           <h3>Receitas de Infusões Poderosas para Mulheres 45+</h3>
           <p>
             Descubra combinações naturais que equilibram seu organismo,
@@ -1193,63 +1411,51 @@ p{
             acessíveis, preparados para você se sentir bem de dentro para fora.
           </p>
         </div>
-
       </div>
-    </div>
 
-    <!-- CONTAINER 2 -->
-    <div class="bloco6-container">
-      <div class="bonus-grid">
+      <!-- BONUS 2 -->
+      <div class="bloco6-bonus">
+        <img
+          src="bonus2.png"
+          alt="Bônus 2 - Planner de rotina"
+          class="bloco6-img"
+        >
 
-        <div class="bonus-img">
-          <div class="bonus2.png"></div>
-        </div>
-
-        <div class="bonus-texto">
-          <span class="bonus-tag">Bônus 2</span>
-          <h3>Seu Novo Aliado Para Guiar Seus Dias</h3>
+        <div class="bloco6-info">
+          <span class="bloco6-tag">Bônus 2</span>
+          <h3>Seu novo aliado para guiar seus dias</h3>
           <p>
-            Este Planner não é apenas para anotar tarefas. Ele é o mapa que vai
+            Este planner não é apenas para anotar tarefas. Ele é o mapa que vai
             guiar seus dias, ajudando você a ouvir seu corpo, eliminar o caos e
             criar uma rotina leve, equilibrada e 100% sua.
           </p>
         </div>
-
       </div>
+
     </div>
 
-    <!-- HEADLINE FINAL -->
+    <!-- HEADLINE ABAIXO -->
     <h2 class="bloco6-head-final">
       Essa é sua chance de dar um passo definitivo rumo ao equilíbrio,
       bem-estar e autoestima.
-      <span class="destaque-atencao">Mas atenção:</span>
-      Os bônus só estão disponíveis por tempo limitado!
+      <br><br>
+      <span class="destaque">Mas atenção:</span> os bônus só estão disponíveis por tempo limitado!
     </h2>
 
     <!-- CTA -->
     <a href="#oferta" class="bloco6-cta">
-      Sim! Quero o Guia e os bônus antes que a oferta acabe!
+      Sim! Quero o guia e os bônus antes que a oferta acabe!
     </a>
 
     <!-- CONTADOR -->
     <div class="contador">
-      <div class="tempo">
-        <span id="horas">00</span>
-        <small>Horas</small>
-      </div>
-      <div class="tempo">
-        <span id="minutos">00</span>
-        <small>Minutos</small>
-      </div>
-      <div class="tempo">
-        <span id="segundos">00</span>
-        <small>Segundos</small>
-      </div>
+      <span id="horas">00</span> :
+      <span id="minutos">00</span> :
+      <span id="segundos">00</span>
     </div>
 
   </div>
 </section>
-
   
 
 <!-- BLOCO 7 – Conteúdos -->
@@ -1298,47 +1504,47 @@ p{
 
 
 <!-- BLOCO 8 – Oferta -->
-<section class="section">
-  <div class="inner oferta-grid">
+<section class="section bloco8">
+  <div class="inner bloco8-grid">
 
-    <!-- IMAGEM (placeholder) -->
-    <div class="oferta-imagem">
-      <!-- Substitua depois pela imagem do mockup -->
-      <div class="mockup combo.png"></div>
+    <!-- IMAGEM -->
+    <div class="bloco8-imagem">
+      <img
+        src="images/oferta_mockup.jpg"
+        alt="Guia Menopausa Sem Tabu + Bônus"
+        class="bloco8-img"
+      >
     </div>
 
     <!-- TEXTO -->
-    <div class="oferta-texto">
+    <div class="bloco8-texto">
 
-      <h2>
-        Você não vai pagar os
-        <span class="preco-riscado">R$ 171,00</span>
-        que esse material vale…
+      <h2 class="bloco8-head">
+        De <span class="preco-antigo">R$ 171,00</span> por apenas
       </h2>
 
-      <p>
-        Hoje, o seu investimento completo no
-        <strong>Guia Menopausa Sem Tabu</strong> + os
-        <strong>2 bônus exclusivos</strong> é de apenas:
+      <h3 class="bloco8-parcela">
+        12x de <span>R$ 9,74</span>
+      </h3>
+
+      <p class="bloco8-avista">
+        ou R$ 97,00 à vista
       </p>
 
-      <div class="parcelamento">
-        <span class="parcelas">6x</span>
-        <span class="valor-parcela">R$ 10,69</span>
-      </div>
-
-      <p class="valor-avista">
-        ou <strong>R$ 57,00</strong> à vista
+      <p class="bloco8-descricao">
+        Acesso imediato ao <strong>Guia Menopausa Sem Tabu</strong> +
+        materiais complementares para apoiar seu entendimento e bem-estar.
       </p>
 
-      <a href="#oferta" class="btn">
-        Sim! Quero acessar o Guia Agora!
+      <a href="#checkout" class="bloco8-cta">
+        Quero garantir meu acesso agora
       </a>
 
     </div>
 
   </div>
 </section>
+
 
 
 <!-- BLOCO 9 – Para quem é / não é -->
@@ -1376,64 +1582,87 @@ p{
 
 
 <!-- BLOCO 10 – Garantia -->
-<section class="section">
-  <div class="inner garantia-grid">
+<section class="section bloco10">
+  <div class="inner bloco10-grid">
 
     <!-- IMAGEM -->
-    <div class="garantia-foto">
-      <!-- Substitua o src pela sua imagem de garantia -->
-      <img src="sophia imagem.png" alt="Garantia de 7 dias">
+    <div class="bloco10-imagem">
+      <img
+        src="selo_garantia.png"
+        alt="Garantia incondicional de 7 dias"
+        class="bloco10-img"
+      >
     </div>
 
     <!-- TEXTO -->
-    <div class="garantia-texto">
-      <h2>Você tem 07 dias de Garantia Incondicional – Sem risco. Sem pressão.</h2>
+    <div class="bloco10-texto">
 
-      <p>
+      <h2 class="bloco10-head">
+        Você tem 07 dias de Garantia Incondicional  
+        <br>Sem risco. Sem pressão.
+      </h2>
+
+      <p class="bloco10-paragrafo">
         Sabemos que dar o primeiro passo pode causar insegurança. Por isso, ao garantir
-        seu acesso ao Guia Menopausa Sem Tabu, você tem <strong>7 dias inteiros</strong>
+        seu acesso ao <strong>Guia Menopausa Sem Tabu</strong>, você tem 7 dias inteiros
         para experimentar o conteúdo com tranquilidade. Leia, aplique, sinta a diferença.
       </p>
 
-      <p>
+      <p class="bloco10-paragrafo">
         E se por qualquer motivo você achar que o guia não é para você, basta entrar em
-        contato com a plataforma e seu dinheiro será devolvido <strong>100%</strong>,
-        sem perguntas, sem burocracia.
+        contato com a plataforma e seu dinheiro será devolvido 100%, sem perguntas,
+        sem burocracia.
       </p>
 
-      <p>
-        Ou seja, você não corre nenhum risco, mas pode ganhar uma vida com mais bem-estar,
-        autoestima e controle sobre seu corpo.
+      <p class="bloco10-paragrafo">
+        Ou seja, você não corre nenhum risco, mas pode ganhar uma vida com mais
+        bem-estar, autoestima e controle sobre seu corpo.
       </p>
+
     </div>
 
   </div>
 </section>
 
 
-<!-- BLOCO 11 – Autoria -->
-<section class="section">
-  <div class="inner autor-grid">
+
+<!-- BLOCO 11 – Sobre a Autora -->
+<section class="section bloco11">
+  <div class="inner bloco11-grid">
 
     <!-- TEXTO -->
-    <div class="autor-texto">
-      <h2>Quem está por trás dessa abordagem educativa?</h2>
-      <p>
-        Sou <strong>Sophia Andrade</strong>, o conteúdo deste ebook foi desenvolvido
-        com base em informações amplamente reconhecidas por instituições de saúde
-        e literatura científica, traduzidas de forma acessível para o dia a dia da mulher.
+    <div class="bloco11-texto">
+
+      <h2 class="bloco11-head">
+        Quem está por trás dessa abordagem educativa?
+      </h2>
+
+      <p class="bloco11-paragrafo">
+        Sou <strong>Sophia Andrade</strong>. O conteúdo deste ebook foi desenvolvido com
+        base em informações amplamente reconhecidas por instituições de saúde e literatura
+        científica, traduzidas de forma acessível para o dia a dia da mulher.
       </p>
+
+      <p class="bloco11-paragrafo">
+        O objetivo deste guia é oferecer conhecimento claro e organizado para que você
+        possa entender melhor as mudanças do corpo durante a menopausa, ampliar sua
+        consciência sobre essa fase e se sentir mais segura ao buscar as melhores
+        escolhas para o seu bem-estar.
+      </p>
+
     </div>
 
-    <!-- FOTO -->
-    <div class="autor-foto">
-      <!-- Substitua o src pela sua imagem -->
-      <img src="SUA-IMAGEM-AQUI.jpg" alt="Sophia Andrade">
+    <!-- IMAGEM -->
+    <div class="bloco11-imagem">
+      <img
+        src="sophia_andrade.png"
+        alt="Sophia Andrade – autora do guia Menopausa Sem Tabu"
+        class="bloco11-img"
+      >
     </div>
 
   </div>
 </section>
-
 
 
 <!-- BLOCO 12 – FAQ -->
