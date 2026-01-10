@@ -464,6 +464,137 @@ p{
   margin:15px 0;
 }
   
+.bloco5-head{
+  color:#000000;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.bloco5-container{
+  background:#f8e1e7;
+  border-radius:18px;
+  padding:30px;
+}
+
+.bloco5-lista{
+  margin:0;
+  padding-left:20px;
+}
+
+.bloco5-lista li{
+  font-size:19px;
+  color:#000000;
+  margin-bottom:18px;
+  line-height:1.6;
+}
+
+@media(max-width:768px){
+  .bloco5-head{
+    font-size:26px;
+  }
+
+  .bloco5-container{
+    padding:25px;
+  }
+
+  .bloco5-lista li{
+    font-size:18px;
+  }
+}
+
+.bloco4-head{
+  font-size:28px;
+  margin-bottom:40px;
+  color:#000000;
+}
+
+.depoimentos-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:30px;
+  margin-bottom:40px;
+}
+
+.depoimento-item{
+  background:#f5f5f5;
+  border-radius:16px;
+  padding:15px;
+}
+
+.depoimento-img{
+  width:100%;
+  height:200px;
+  background:#dddddd;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+
+.perfil{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.perfil-foto{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:#bbbbbb;
+}
+
+.perfil span{
+  font-size:16px;
+  color:#000000;
+}
+
+.bloco4-texto{
+  font-size:18px;
+  margin:40px 0;
+  color:#000000;
+}
+
+.bloco4-head-sec{
+  font-size:26px;
+  margin-bottom:25px;
+}
+
+.video-box{
+  width:100%;
+  max-width:720px;
+  margin:0 auto 40px;
+  aspect-ratio:16/9;
+}
+
+.video-box iframe{
+  width:100%;
+  height:100%;
+  border-radius:16px;
+}
+
+.bloco4-head-final{
+  font-size:26px;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.bloco4-texto-final{
+  font-size:20px;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+@media(max-width:768px){
+  .depoimentos-grid{
+    grid-template-columns:1fr;
+  }
+
+  .bloco4-head,
+  .bloco4-head-sec,
+  .bloco4-head-final{
+    font-size:24px;
+  }
+}
+
   
   
 </style>
@@ -498,36 +629,119 @@ p{
   </div>
 </section>
 
-<!-- BLOCO 4 -->
-<section class="section">
+<!-- BLOCO 4 – Depoimentos -->
+<section class="section bloco4">
   <div class="inner">
-    <h2>O que acontece no corpo durante a menopausa</h2>
-    <p>A menopausa é uma transição natural marcada por mudanças hormonais que afetam o corpo e as emoções.</p>
+
+    <!-- HEAD INICIAL -->
+    <h2 class="bloco4-head">
+      Muitas mulheres chegaram até este guia depois de semanas pesquisando no Google,
+      confusas e inseguras. Esses relatos refletem o que acontece quando a informação
+      certa finalmente faz sentido.
+    </h2>
+
+    <!-- DEPOIMENTOS -->
+    <div class="depoimentos-grid">
+
+      <!-- DEPOIMENTO 1 -->
+      <div class="depoimento-item">
+        <div class="depoimento-img"></div>
+
+        <div class="perfil">
+          <div class="perfil-foto"></div>
+          <span>Patrícia, 52 anos</span>
+        </div>
+      </div>
+
+      <!-- DEPOIMENTO 2 -->
+      <div class="depoimento-item">
+        <div class="depoimento-img"></div>
+
+        <div class="perfil">
+          <div class="perfil-foto"></div>
+          <span>Renata, 49 anos</span>
+        </div>
+      </div>
+
+      <!-- DEPOIMENTO 3 -->
+      <div class="depoimento-item">
+        <div class="depoimento-img"></div>
+
+        <div class="perfil">
+          <div class="perfil-foto"></div>
+          <span>Luciana, 45 anos</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TEXTO EXPLICATIVO -->
+    <p class="bloco4-texto">
+      Recebo com frequência mensagens de mulheres que compartilham como esse guia ajudou
+      a entender melhor a menopausa e a enxergar essa fase com mais clareza e tranquilidade.
+      São relatos sinceros, de identificação e aprendizado, que mostram o impacto que a
+      informação correta pode ter no dia a dia. Aqui estão alguns desses depoimentos para
+      você conhecer diferentes experiências e perceber que essa jornada pode ser vivida
+      com mais consciência.
+    </p>
+
+    <!-- HEAD VIDEO -->
+    <h2 class="bloco4-head-sec">
+      Elas já estão vivendo essa fase com mais clareza, consciência e autonomia
+    </h2>
+
+    <!-- VIDEO -->
+    <div class="video-box">
+      <!-- Substitua a URL do vídeo -->
+      <iframe
+        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- HEAD FINAL -->
+    <h2 class="bloco4-head-final">
+      Muitas mulheres já buscaram mais clareza para entender essa fase e lidar melhor
+      com as mudanças do dia a dia.<br><br>
+      Agora você também pode dar esse passo com mais consciência e tranquilidade.
+    </h2>
+
+    <!-- TEXTO FINAL -->
+    <p class="bloco4-texto-final">
+      Clique no botão abaixo para acessar o guia informativo.<br><br>
+      Um passo simples para entender melhor essa fase e cuidar de você com mais consciência.
+    </p>
+
+    <!-- CTA -->
+    <a href="#oferta" class="btn">
+      Quero aprofundar meu entendimento
+    </a>
+
   </div>
 </section>
 
-<!-- BLOCO 5 -->
-<section class="section">
+
+<!-- BLOCO 5 – Aprendizados -->
+<section class="section bloco5">
   <div class="inner">
-    <h2>Existem caminhos além da reposição hormonal</h2>
-    <p>Entender as possibilidades ajuda você a tomar decisões mais conscientes e seguras.</p>
+
+    <h2 class="bloco5-head">
+      Ao longo deste guia, você vai aprender:
+    </h2>
+
+    <div class="bloco5-container">
+      <ul class="bloco5-lista">
+        <li>O que é a menopausa e o que muda no corpo feminino.</li>
+        <li>Por que sintomas físicos e emocionais podem surgir.</li>
+        <li>A relação entre rotina, emoções e bem-estar.</li>
+        <li>Práticas de autocuidado e reconexão.</li>
+        <li>Como encarar essa fase com mais consciência e respeito ao seu corpo.</li>
+      </ul>
+    </div>
+
   </div>
 </section>
-
-<!-- HEADLINE INTRO BLOCO 6 -->
-<div class="bloco6-intro">
-  <p>
-    Ao adquirir o guia, você também terá acesso a materiais complementares, como:
-  </p>
-
-  <p class="bloco6-destaque">
-    <strong>2 Presentes com Sugestões de práticas de autocuidado e Organização da rotina</strong>
-  </p>
-
-  <p>
-    Esses bônus são materiais adicionais para apoiar seu aprendizado.
-  </p>
-</div>
   
   
   <!-- BLOCO 6 – Bônus e urgência -->
