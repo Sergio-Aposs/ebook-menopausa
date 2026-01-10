@@ -162,6 +162,307 @@ p{
   }
 }
   
+.publico-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  margin-top:40px;
+}
+
+.publico-col h3{
+  font-size:22px;
+  margin-bottom:15px;
+  color:#000;
+}
+
+.publico-col ul{
+  padding-left:20px;
+  margin:0;
+}
+
+.publico-col li{
+  font-size:17px;
+  margin-bottom:12px;
+}
+
+@media(max-width:768px){
+  .publico-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.oferta-grid{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:50px;
+  align-items:center;
+}
+
+.oferta-imagem{
+  display:flex;
+  justify-content:center;
+}
+
+.imagem-placeholder{
+  width:100%;
+  max-width:320px;
+  height:360px;
+  background:#f2f2f2;
+  border-radius:12px;
+}
+
+.oferta-texto h2{
+  font-size:30px;
+  margin-bottom:20px;
+}
+
+.preco-riscado{
+  color:#c00000;
+  text-decoration:line-through;
+  font-weight:bold;
+}
+
+.oferta-texto p{
+  font-size:18px;
+}
+
+.parcelamento{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  margin:25px 0 10px;
+}
+
+.parcelas{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.valor-parcela{
+  font-size:36px;
+  font-weight:bold;
+  color:#1fa84f;
+}
+
+.valor-avista{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+@media(max-width:768px){
+  .oferta-grid{
+    grid-template-columns:1fr;
+    text-align:left;
+  }
+
+  .oferta-imagem{
+    margin-bottom:30px;
+  }
+
+  .imagem-placeholder{
+    height:300px;
+  }
+}
+
+/* BLOCO 7 */
+.bloco7{
+  background:#333333;
+}
+
+.bloco7-head{
+  color:#ffffff;
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.bloco7-sub{
+  color:#ffab21;
+  font-size:18px;
+  margin-bottom:40px;
+}
+
+.conteudos-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:25px;
+}
+
+.conteudo-box{
+  position:relative;
+  background:#ffffff;
+  border-radius:16px;
+  padding:25px 25px 25px 70px;
+}
+
+.numero{
+  position:absolute;
+  top:50%;
+  left:20px;
+  transform:translateY(-50%);
+  width:36px;
+  height:36px;
+  background:#ffab21;
+  color:#ffffff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+
+.conteudo-texto{
+  margin:0;
+  font-size:18px;
+  color:#000000;
+}
+
+.preco-antigo{
+  color:#ffab21;
+  font-weight:bold;
+  text-decoration:line-through;
+}
+
+@media(max-width:768px){
+  .bloco7-head{
+    font-size:26px;
+  }
+
+  .conteudo-box{
+    padding:25px 20px 25px 65px;
+  }
+}
+  
+/* BLOCO 6 */
+.bloco6{
+  background:#fdf0f4;
+}
+
+.bloco6-container{
+  background:#8a2c4b;
+  border-radius:18px;
+  padding:30px;
+  margin-bottom:30px;
+}
+
+.bonus-grid{
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:20px;
+  align-items:flex-start;
+}
+
+.img-placeholder{
+  width:80px;
+  height:80px;
+  background:#dddddd;
+  border-radius:12px;
+}
+
+.bonus-tag{
+  display:inline-block;
+  background:#ffffff;
+  color:#000000;
+  font-weight:bold;
+  padding:4px 12px;
+  border-radius:12px;
+  margin-bottom:10px;
+}
+
+.bonus-texto h3{
+  color:#ffffff;
+  font-size:22px;
+  margin:10px 0 12px;
+}
+
+.bonus-texto p{
+  color:#ffffff;
+  font-size:17px;
+  margin:0;
+}
+
+.bloco6-head-final{
+  font-size:28px;
+  color:#000000;
+  margin:40px 0 25px;
+  text-align:center;
+}
+
+.destaque-atencao{
+  background:#29ff89;
+  padding:2px 6px;
+  font-weight:bold;
+}
+
+.bloco6-cta{
+  display:block;
+  width:fit-content;
+  margin:0 auto 25px;
+  background:#d9b15f;
+  color:#000000;
+  padding:18px 32px;
+  border-radius:32px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+}
+
+.contador{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.tempo{
+  background:#ff0000;
+  color:#ffffff;
+  border-radius:8px;
+  padding:10px 14px;
+  text-align:center;
+  min-width:70px;
+}
+
+.tempo span{
+  display:block;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.tempo small{
+  font-size:12px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .bonus-grid{
+    grid-template-columns:1fr;
+  }
+
+  .img-placeholder{
+    margin-bottom:15px;
+  }
+
+  .bloco6-head-final{
+    font-size:24px;
+  }
+}
+
+.bloco6-intro{
+  max-width:760px;
+  margin:0 auto 35px;
+  text-align:center;
+}
+
+.bloco6-intro p{
+  font-size:18px;
+  color:#000000;
+  margin-bottom:12px;
+}
+
+.bloco6-destaque{
+  font-size:20px;
+  margin:15px 0;
+}
   
   
   
@@ -213,43 +514,225 @@ p{
   </div>
 </section>
 
-<!-- BLOCO 6 -->
-<section class="section">
+<!-- HEADLINE INTRO BLOCO 6 -->
+<div class="bloco6-intro">
+  <p>
+    Ao adquirir o guia, você também terá acesso a materiais complementares, como:
+  </p>
+
+  <p class="bloco6-destaque">
+    <strong>2 Presentes com Sugestões de práticas de autocuidado e Organização da rotina</strong>
+  </p>
+
+  <p>
+    Esses bônus são materiais adicionais para apoiar seu aprendizado.
+  </p>
+</div>
+  
+  
+  <!-- BLOCO 6 – Bônus e urgência -->
+<section class="section bloco6">
   <div class="inner">
-    <h2>Informação reduz medo</h2>
-    <p>Quando você entende o que está acontecendo no seu corpo, a ansiedade diminui e a clareza aumenta.</p>
-    <a href="#oferta" class="btn">Quero acessar o guia completo</a>
+
+    <!-- CONTAINER 1 -->
+    <div class="bloco6-container">
+      <div class="bonus-grid">
+
+        <div class="bonus-img">
+          <!-- imagem pequena -->
+          <div class="img-placeholder"></div>
+        </div>
+
+        <div class="bonus-texto">
+          <span class="bonus-tag">Bônus 1</span>
+          <h3>Receitas de Infusões Poderosas para Mulheres 45+</h3>
+          <p>
+            Descubra combinações naturais que equilibram seu organismo,
+            acalmam a mente e resgatam sua energia. Tudo com ingredientes
+            acessíveis, preparados para você se sentir bem de dentro para fora.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTAINER 2 -->
+    <div class="bloco6-container">
+      <div class="bonus-grid">
+
+        <div class="bonus-img">
+          <div class="img-placeholder"></div>
+        </div>
+
+        <div class="bonus-texto">
+          <span class="bonus-tag">Bônus 2</span>
+          <h3>Seu Novo Aliado Para Guiar Seus Dias</h3>
+          <p>
+            Este Planner não é apenas para anotar tarefas. Ele é o mapa que vai
+            guiar seus dias, ajudando você a ouvir seu corpo, eliminar o caos e
+            criar uma rotina leve, equilibrada e 100% sua.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HEADLINE FINAL -->
+    <h2 class="bloco6-head-final">
+      Essa é sua chance de dar um passo definitivo rumo ao equilíbrio,
+      bem-estar e autoestima.
+      <span class="destaque-atencao">Mas atenção:</span>
+      Os bônus só estão disponíveis por tempo limitado!
+    </h2>
+
+    <!-- CTA -->
+    <a href="#oferta" class="bloco6-cta">
+      Sim! Quero o Guia e os bônus antes que a oferta acabe!
+    </a>
+
+    <!-- CONTADOR -->
+    <div class="contador">
+      <div class="tempo">
+        <span id="horas">00</span>
+        <small>Horas</small>
+      </div>
+      <div class="tempo">
+        <span id="minutos">00</span>
+        <small>Minutos</small>
+      </div>
+      <div class="tempo">
+        <span id="segundos">00</span>
+        <small>Segundos</small>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- BLOCO 7 -->
-<section class="section">
-  <div class="inner">
-    <h2>O Guia Menopausa Sem Tabu</h2>
-    <p>Um material criado para reunir, de forma clara e acessível, as principais informações que toda mulher precisa entender sobre a menopausa.</p>
-  </div>
-</section>
+  
 
-<!-- BLOCO 8 -->
-<section class="section">
+<!-- BLOCO 7 – Conteúdos -->
+<section class="section bloco7">
   <div class="inner">
-    <h2>O que você vai entender</h2>
-    <p>
-      • O que realmente acontece no corpo durante a menopausa<br>
-      • Por que os sintomas variam de mulher para mulher<br>
-      • Quais caminhos existem além da reposição hormonal<br>
-      • Como lidar com essa fase com mais tranquilidade
+
+    <h2 class="bloco7-head">O que você vai receber ao acessar o guia</h2>
+    <p class="bloco7-sub">
+      Além do conteúdo principal, você recebe materiais complementares que ampliam
+      sua compreensão e cuidado nessa fase.
     </p>
+
+    <div class="conteudos-grid">
+
+      <!-- ITEM 1 -->
+      <div class="conteudo-box">
+        <div class="numero">1</div>
+        <p class="conteudo-texto">
+          <strong>eBook Menopausa Sem Tabu</strong><br>
+          <span class="preco-antigo">R$ 97,00</span>
+        </p>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="conteudo-box">
+        <div class="numero">2</div>
+        <p class="conteudo-texto">
+          <strong>Guia de Receitas Naturais para Alívio da Menopausa</strong><br>
+          <span class="preco-antigo">R$ 37,00</span>
+        </p>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="conteudo-box">
+        <div class="numero">3</div>
+        <p class="conteudo-texto">
+          <strong>Mini Guia de Autocuidado Emocional para Mulheres na Menopausa</strong><br>
+          <span class="preco-antigo">R$ 37,00</span>
+        </p>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
-<!-- BLOCO 9 -->
+
+<!-- BLOCO 8 – Oferta -->
 <section class="section">
-  <div class="inner">
-    <h2>Para quem é este guia</h2>
-    <p>Para mulheres que desejam informação clara antes de tomar qualquer decisão sobre essa fase da vida.</p>
+  <div class="inner oferta-grid">
+
+    <!-- IMAGEM (placeholder) -->
+    <div class="oferta-imagem">
+      <!-- Substitua depois pela imagem do mockup -->
+      <div class="imagem-placeholder"></div>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="oferta-texto">
+
+      <h2>
+        Você não vai pagar os
+        <span class="preco-riscado">R$ 171,00</span>
+        que esse material vale…
+      </h2>
+
+      <p>
+        Hoje, o seu investimento completo no
+        <strong>Guia Menopausa Sem Tabu</strong> + os
+        <strong>2 bônus exclusivos</strong> é de apenas:
+      </p>
+
+      <div class="parcelamento">
+        <span class="parcelas">6x</span>
+        <span class="valor-parcela">R$ 10,69</span>
+      </div>
+
+      <p class="valor-avista">
+        ou <strong>R$ 57,00</strong> à vista
+      </p>
+
+      <a href="#oferta" class="btn">
+        Sim! Quero acessar o Guia Agora!
+      </a>
+
+    </div>
+
   </div>
 </section>
+
+
+<!-- BLOCO 9 – Para quem é / não é -->
+<section class="section">
+  <div class="inner">
+
+    <h2>Para quem é / não é</h2>
+
+    <div class="publico-grid">
+
+      <!-- PARA QUEM É -->
+      <div class="publico-col">
+        <h3>É para você se:</h3>
+        <ul>
+          <li>Quer entender melhor o que acontece com seu corpo na menopausa</li>
+          <li>Busca informação clara antes de tomar decisões</li>
+          <li>Deseja viver essa fase com mais consciência e tranquilidade</li>
+        </ul>
+      </div>
+
+      <!-- PARA QUEM NÃO É -->
+      <div class="publico-col">
+        <h3>Não é para você se:</h3>
+        <ul>
+          <li>Procura promessas milagrosas ou soluções instantâneas</li>
+          <li>Não tem interesse em compreender seu próprio corpo</li>
+          <li>Busca apenas fórmulas prontas sem reflexão</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
 <!-- BLOCO 10 – Garantia -->
 <section class="section">
@@ -366,5 +849,29 @@ p{
 
 </div>
 
+<script>
+(function(){
+  let total = 2 * 60 * 60; // 2 horas
+
+  function update(){
+    if(total < 0) return;
+
+    let h = Math.floor(total / 3600);
+    let m = Math.floor((total % 3600) / 60);
+    let s = total % 60;
+
+    document.getElementById("horas").textContent = String(h).padStart(2,"0");
+    document.getElementById("minutos").textContent = String(m).padStart(2,"0");
+    document.getElementById("segundos").textContent = String(s).padStart(2,"0");
+
+    total--;
+  }
+
+  update();
+  setInterval(update,1000);
+})();
+</script>
+
+  
 </body>
 </html>
