@@ -502,67 +502,74 @@ p{
   }
 }
 
+.bloco4{
+  background:#ffffff;
+  text-align:center;
+}
+
+.bloco4-head,
+.bloco4-head-sec,
+.bloco4-head-final{
+  color:#000000;
+  margin-bottom:25px;
+}
+
 .bloco4-head{
   font-size:28px;
-  margin-bottom:40px;
-  color:#000000;
+}
+
+.bloco4-head-sec{
+  font-size:26px;
+  margin-top:40px;
+}
+
+.bloco4-head-final{
+  font-size:26px;
+  margin-top:40px;
 }
 
 .depoimentos-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
   gap:30px;
-}
-  margin-bottom:40px;
+  margin:40px 0;
 }
 
 .depoimento-item{
-  background:#f5f5f5;
-  border-radius:16px;
-  padding:15px;
+  text-align:left;
 }
 
 .depoimento-img{
   width:100%;
-  height:200px;
-  background:#dddddd;
-  border-radius:12px;
+  border-radius:16px;
   margin-bottom:15px;
 }
 
 .perfil{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
 }
 
 .perfil-foto{
-  width:50px;
-  height:50px;
+  width:56px;
+  height:56px;
   border-radius:50%;
-  background:#bbbbbb;
+  object-fit:cover;
 }
 
-.perfil span{
-  font-size:16px;
+.bloco4-texto,
+.bloco4-texto-final{
+  font-size:20px;
+  max-width:900px;
+  margin:0 auto 30px;
+  line-height:1.6;
   color:#000000;
-}
-
-.bloco4-texto{
-  font-size:18px;
-  margin:40px 0;
-  color:#000000;
-}
-
-.bloco4-head-sec{
-  font-size:26px;
-  margin-bottom:25px;
 }
 
 .video-box{
-  width:100%;
   max-width:720px;
-  margin:0 auto 40px;
+  margin:30px auto;
   aspect-ratio:16/9;
 }
 
@@ -572,29 +579,17 @@ p{
   border-radius:16px;
 }
 
-.bloco4-head-final{
-  font-size:26px;
-  margin-bottom:25px;
-  text-align:center;
+.btn{
+  display:inline-block;
+  background:#8a2c4b;
+  color:#ffffff;
+  padding:18px 34px;
+  border-radius:32px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
 }
 
-.bloco4-texto-final{
-  font-size:20px;
-  text-align:center;
-  margin-bottom:30px;
-}
-
-@media(max-width:768px){
-  .depoimentos-grid{
-    grid-template-columns:1fr;
-  }
-
-  .bloco4-head,
-  .bloco4-head-sec,
-  .bloco4-head-final{
-    font-size:24px;
-  }
-}
 
 .bloco31{
   background:#8a2c4b;
@@ -859,7 +854,7 @@ p{
 
     <!-- COLUNA MOCKUP -->
     <div class="bloco1-mockup">
-      <div class="mockup combo.jpg"></div>
+      <div class="mockup combo.png"></div>
     </div>
 
   </div>
@@ -990,7 +985,6 @@ p{
   </div>
 </section>
 
-
 <!-- BLOCO 4 – Depoimentos -->
 <section class="section bloco4">
   <div class="inner">
@@ -1007,35 +1001,106 @@ p{
 
       <!-- DEPOIMENTO 1 -->
       <div class="depoimento-item">
-        <div class="depoimento_patricia.png"></div>
+        <img 
+          src="images/depoimento_patricia.png" 
+          alt="Depoimento de Patrícia sobre a menopausa"
+          class="depoimento-img"
+        >
 
         <div class="perfil">
-          <div class="patricia 52 anos.png"></div>
+          <img 
+            src="images/patricia_52.png" 
+            alt="Patrícia, 52 anos"
+            class="perfil-foto"
+          >
           <span>Patrícia, 52 anos</span>
         </div>
       </div>
 
       <!-- DEPOIMENTO 2 -->
       <div class="depoimento-item">
-        <div class="depoimento_renata.png"></div>
+        <img 
+          src="images/depoimento_renata.png" 
+          alt="Depoimento de Renata sobre a menopausa"
+          class="depoimento-img"
+        >
 
         <div class="perfil">
-          <div class="luciana 49 anos.png"></div>
+          <img 
+            src="images/renata_49.png" 
+            alt="Renata, 49 anos"
+            class="perfil-foto"
+          >
           <span>Renata, 49 anos</span>
         </div>
       </div>
 
       <!-- DEPOIMENTO 3 -->
       <div class="depoimento-item">
-        <div class="depoimento_luciana.png"></div>
+        <img 
+          src="images/depoimento_luciana.png" 
+          alt="Depoimento de Luciana sobre a menopausa"
+          class="depoimento-img"
+        >
 
         <div class="perfil">
-          <div class="luciana 45 anos.png"></div>
+          <img 
+            src="images/luciana_45.png" 
+            alt="Luciana, 45 anos"
+            class="perfil-foto"
+          >
           <span>Luciana, 45 anos</span>
         </div>
       </div>
 
     </div>
+
+    <!-- TEXTO EXPLICATIVO -->
+    <p class="bloco4-texto">
+      Recebo com frequência mensagens de mulheres que compartilham como esse guia ajudou
+      a entender melhor a menopausa e a enxergar essa fase com mais clareza e tranquilidade.
+      São relatos sinceros, de identificação e aprendizado, que mostram o impacto que a
+      informação correta pode ter no dia a dia. Aqui estão alguns desses depoimentos para
+      você conhecer diferentes experiências e perceber que essa jornada pode ser vivida
+      com mais consciência.
+    </p>
+
+    <!-- HEAD VIDEO -->
+    <h2 class="bloco4-head-sec">
+      Elas já estão vivendo essa fase com mais clareza, consciência e autonomia
+    </h2>
+
+    <!-- VIDEO -->
+    <div class="video-box">
+      <iframe
+        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- HEAD FINAL -->
+    <h2 class="bloco4-head-final">
+      Muitas mulheres já buscaram mais clareza para entender essa fase e lidar melhor
+      com as mudanças do dia a dia.<br><br>
+      Agora você também pode dar esse passo com mais consciência e tranquilidade.
+    </h2>
+
+    <!-- TEXTO FINAL -->
+    <p class="bloco4-texto-final">
+      Clique no botão abaixo para acessar o guia informativo.<br><br>
+      Um passo simples para entender melhor essa fase e cuidar de você com mais consciência.
+    </p>
+
+    <!-- CTA -->
+    <a href="#oferta" class="btn">
+      Quero aprofundar meu entendimento
+    </a>
+
+  </div>
+</section>
+
 
     <!-- TEXTO EXPLICATIVO -->
     <p class="bloco4-texto">
