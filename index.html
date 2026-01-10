@@ -1061,22 +1061,19 @@ a.cta{
 }
 
 
-/* ===== BLOCO 5 – FORÇAR 1 COLUNA ===== */
-.bloco5 .bonus-container,
-.bloco5 .bonus-grid{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* ===== BLOCO 5 – FORÇAR LISTA EM 1 COLUNA ===== */
+.bloco5 .bloco5-lista{
+  column-count: 1 !important;
+  columns: 1 !important;
+  column-gap: 0 !important;
 }
 
-/* caso cada bônus seja uma box */
-.bloco5 .bonus-item{
+ .bloco5 ul,
+.bloco5 li{
   width: 100%;
+  break-inside: avoid;
 }
-
- .bloco5 .bonus-container{
-  grid-template-columns: 1fr !important;
-}
+ 
  
   
 </style>
