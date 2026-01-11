@@ -1091,6 +1091,78 @@ a.cta{
   display: block;
 }
 
+/* ===== BLOCO 9 – QUADRO BRANCO CONTIDO ===== */
+.section .inner{
+  box-sizing: border-box;
+}
+
+/* escopo apenas para o bloco 9 */
+.section .inner > h2 + .publico-grid{
+  max-width: 100%;
+}
+
+/* cria o "quadro branco" */
+.publico-grid{
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* colunas internas */
+.publico-col{
+  background: transparent;
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .publico-grid{
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+}
+
+/* ===== PADRÃO DE QUADRO CONTIDO – BLOCOS 9, 12 e 13 ===== */
+
+/* Bloco 9 – Para quem é / não é */
+.bloco9 .inner > *:not(h2){
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Bloco 12 – FAQ */
+.bloco12 .faq-grid,
+.bloco12 .faq-container{
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+
+/* Bloco 13 – CTA final */
+.bloco13 .inner > *{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+  .bloco9 .publico-grid,
+  .bloco12 .faq-grid,
+  .bloco12 .faq-container,
+  .bloco13 .inner > *{
+    padding: 30px 20px;
+  }
+}
+
+  
   
 </style>
 </head>
